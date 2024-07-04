@@ -29,7 +29,7 @@ export default {
       },
       fontFamily: {
         sans: ["var(--font-primary)"],
-        poppins: ["var(--font-secondary"]
+        poppins: ["var(--font-secondary)"]
       },
       colors: {
         "primary": { 100: "#fba900" },

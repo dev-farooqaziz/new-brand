@@ -1,9 +1,9 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 //========== Import Components
 import CTA from "@/components/cta/CTA";
+//========== Import Icons
 import {
     Navbar, Collapse, Typography, List, Menu, MenuHandler, MenuList, MenuItem,
 } from "@material-tailwind/react";
@@ -13,7 +13,7 @@ import {
 import {
     Bars4Icon, GlobeAmericasIcon, NewspaperIcon, PhoneIcon, RectangleGroupIcon, SquaresPlusIcon, SunIcon, TagIcon, UserGroupIcon,
 } from "@heroicons/react/24/solid";
-//========== Import Images
+
 
 const megaMenuItems = [
     {
@@ -87,7 +87,7 @@ function MegaMenu1() {
                             href={href}
                             variant="h6"
                             color="black"
-                            className="flex items-center font-sans text-[16px] font-normal text-black hover:text-primary-100 h-full"
+                            className="flex items-center font-poppins text-[16px] font-normal text-black hover:text-primary-100 h-full"
                         >
                             {title}
                         </Link>
@@ -113,7 +113,7 @@ function MegaMenu1() {
                 <MenuHandler>
                     <Link href="#" variant="small" className="font-medium">
                         <span
-                            className="flex items-center px-2 gap-2 py-2 font-sans text-[12px] lgB:text-[16px] font-medium leading-[20px] xl:leading-[24px] hover:text-primary-100"
+                            className="flex items-center px-2 gap-2 py-2 font-poppins text-[12px] lgB:text-[16px] font-medium leading-[20px] xl:leading-[24px] hover:text-primary-100"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => {
                                 if (window.innerWidth <= 991) {
@@ -175,7 +175,7 @@ function MegaMenu2() {
                             href={href}
                             variant="h6"
                             color="black"
-                            className="flex items-center font-sans text-[16px] font-normal text-black hover:text-primary-100 h-full"
+                            className="flex items-center font-poppins text-[16px] font-normal text-black hover:text-primary-100 h-full"
                         >
                             {title}
                         </Link>
@@ -201,7 +201,7 @@ function MegaMenu2() {
                 <MenuHandler>
                     <Link href="#" variant="small" className="font-medium">
                         <span
-                            className="flex items-center px-2 gap-2 py-2 font-sans text-[12px] lgB:text-[16px] font-medium leading-[20px] xl:leading-[24px] hover:text-primary-100"
+                            className="flex items-center px-2 gap-2 py-2 font-poppins text-[12px] lgB:text-[16px] font-medium leading-[20px] xl:leading-[24px] hover:text-primary-100"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => {
                                 if (window.innerWidth <= 991) {
@@ -251,7 +251,7 @@ function NavList() {
                 href="/"
                 variant="small"
                 color="black"
-                className="font-sans text-[12px] lgB:text-[16px] font-medium hover:text-primary-100"
+                className="font-poppins text-[12px] lgB:text-[16px] font-medium hover:text-primary-100"
             >
                 <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Home</span>
             </Link>
@@ -261,7 +261,7 @@ function NavList() {
                 href="#"
                 variant="small"
                 color="black"
-                className="font-sans text-[12px] lgB:text-[16px] font-medium hover:text-primary-100"
+                className="font-poppins text-[12px] lgB:text-[16px] font-medium hover:text-primary-100"
             >
                 <span className="flex items-center gap-2 p-2 xl:px-4 py-2">About</span>
             </Link>
@@ -269,7 +269,7 @@ function NavList() {
                 href="#"
                 variant="small"
                 color="black"
-                className="font-sans text-[12px] lgB:text-[16px] font-medium hover:text-primary-100"
+                className="font-poppins text-[12px] lgB:text-[16px] font-medium hover:text-primary-100"
             >
                 <span className="flex items-center gap-2 p-2 xl:px-4 py-2">
                     Contact
@@ -325,7 +325,7 @@ const Header = () => {
                                 />
                                 <CTA
                                     text="Get A Quote"
-                                    hover="hover:bg-transparent"
+                                    bg="bg-black text-white"
                                 />
                             </div>
                         </div>

@@ -16,3 +16,28 @@ body {
   overflow-x: hidden;
   background-color: #ffffff;
 }
+
+/* ============ scroll bar css ============ */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fba900;
+}
+
+/* ============ Media Queries ============ */
+
+@media screen and (max-width: 991px) {
+  br {
+    display: none;
+  }
+}
