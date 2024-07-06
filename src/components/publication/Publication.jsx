@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+//========== Import Components
+import { AutoScrollSlider } from "@/components"
 //========== Import Images
 import publications1 from "media/icons/publications/1.png"
 import publications2 from "media/icons/publications/2.png"
@@ -18,16 +20,16 @@ import publications12 from "media/icons/publications/12.png"
 const Publication = () => {
     return (
         <>
-            <section className="py-10 lgB:py-20">
+            <section className="py-10 lg:py-20">
                 <div className="container">
                     <div className="heading mb-12">
                         <div className="bg-[#EBEBEB] text-black border-0 w-max mx-auto h-[40px] xl:h-[45px] px-10 rounded-[45px] flex items-center cursor-pointer mb-2">
                             <span className="text-[22px] font-sans tracking-wide">Publications</span>
                         </div>
-                        <h2 className="text-[30px] lg:text-[50px] 2xl:text-[55px] tracking-wide font-bold font-sans text-black text-center leading-snug">Many Got Featured In Major Publications <br className="hidden lgB:block" />
+                        <h2 className="text-[30px] lg:text-[50px] 2xl:text-[55px] tracking-wide font-bold font-sans text-black text-center leading-snug">Many Got Featured In Major Publications <br className="hidden lg:block" />
                             Just By Working With Us.</h2>
                     </div>
-                    <div className="flex flex-wrap gap-20 lgB:gap-x-40 gap-y-20 justify-center mt-20">
+                    <div className="hidden lg:flex flex-wrap gap-20 lg:gap-x-40 gap-y-20 justify-center mt-20">
                         <div>
                             <Image src={publications1} alt="Brand" className="invert w-[80%] mx-auto" />
                         </div>
@@ -64,6 +66,19 @@ const Publication = () => {
                         <div>
                             <Image src={publications12} alt="Brand" className="invert w-[80%] mx-auto" />
                         </div>
+                    </div>
+                    <div className="block lg:hidden">
+                        <AutoScrollSlider>
+                            {
+                                [publications1, publications2, publications3, publications4, publications5, publications6, publications7, publications8, publications9, publications10, publications11, publications12].map((e, i) => (
+                                    <div key={i} className="grow-0 shrink-0 basis-[220px] min-w-0 pl-4">
+                                        <div>
+                                            <Image src={e} alt="Brand" className="aspect-auto block invert w-[60%] mx-auto" />
+                                        </div>
+                                    </div>
+                                ))
+                            }
+                        </AutoScrollSlider>
                     </div>
                 </div>
             </section>

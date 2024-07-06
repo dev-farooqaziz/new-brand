@@ -36,7 +36,19 @@ body {
 
 /* ============ Media Queries ============ */
 
+@media screen and (max-width: 1099px) {
+  br {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 991px) {
+  br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
   br {
     display: none;
   }

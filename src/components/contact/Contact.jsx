@@ -123,15 +123,15 @@ const Contact = () => {
     };
     return (
         <>
-            <section className="py-10 lgB:py-20">
+            <section className="py-10 lg:py-20">
                 <div className="container">
-                    <div className="relative px-16 py-8 lgB:py-20">
-                        <Image src={contactBg} alt="Brand" className="absolute top-0 left-0 -z-10 w-full h-full" />
-                        <div className="grid grid-cols-12 gap-10">
-                            <div className="col-span-5">
+                    <div className="px-4 md:px-10 lg:px-16 py-10 lg:py-20 relative z-10 rounded-[25px] overflow-hidden">
+                        <Image src={contactBg} alt="Brand" fill={true} className="-z-10 object-cover object-bottom w-full h-full" />
+                        <div className="grid grid-cols-12 gap-y-6 md:gap-10">
+                            <div className="col-span-12 lg:col-span-5">
                                 <div className="flex flex-col gap-2">
                                     <h4 className="text-[18px] lg:text-[20px] tracking-wide font-bold font-sans text-primary-100 leading-tight">30 Minutes Strategy Session</h4>
-                                    <h3 className="text-[24px] lgB:text-[34px] xl:text-[40px] tracking-wide font-bold font-sans text-white leading-tight mt-2 mb-5">Get Your Free 30 Minute Strategy Session With An
+                                    <h3 className="text-[20px] md:text-[24px] lg:text-[26px] xl:text-[40px] tracking-wide font-bold font-sans text-white leading-tight mt-2 mb-5">Get Your Free 30 Minute Strategy Session With An
                                         Experienced App Experts Valued At $300</h3>
                                     <div className="w-max">
                                         <CTA
@@ -139,17 +139,17 @@ const Contact = () => {
                                             bg="bg-white text-black"
                                         />
                                     </div>
-                                    <div className="absolute bottom-0 left-[18%] xl:left-[22%] -z-10">
-                                        <Image src={contactImg} alt="Brand" className="w-[35%] xl:w-[28%]" />
+                                    <div className="hidden lg:block absolute bottom-0 left-[10%] xl:left-[22%] -z-10">
+                                        <Image src={contactImg} alt="Brand" className="w-[40%] xl:w-[28%]" />
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-span-7">
-                                <div className="ps-12">
-                                    <h3 className="text-[24px] lgB:text-[34px] xl:text-[40px] tracking-wide font-bold font-sans text-white leading-tight mb-3">Start Your Mobile App Development Journey With Us?</h3>
-                                    <p className="text-[16px] tracking-wide font-sans text-[#737373]">Excited to turn your app concept into reality? Get in touch for a detailed consultation. We're keen to explore your project and demonstrate how our assistance can make a difference. Choosing Bitswits means partnering with a team dedicated to your app's success</p>
+                            <div className="col-span-12 lg:col-span-7">
+                                <div className="ps-0 lg:ps-12">
+                                    <h3 className="text-[24px] md:text-[34px] xl:text-[40px] tracking-wide font-bold font-sans text-white leading-tight mb-3">Start Your Mobile App Development Journey With Us?</h3>
+                                    <p className="text-[15px] tracking-wide font-sans text-justify md:text-left text-[#737373]">Excited to turn your app concept into reality? Get in touch for a detailed consultation. We're keen to explore your project and demonstrate how our assistance can make a difference. Choosing Bitswits means partnering with a team dedicated to your app's success</p>
                                 </div>
-                                <form className='flex flex-col gap-6 ps-12 mt-6'>
+                                <form className='flex flex-col gap-6 ps-0 lg:ps-12 mt-6'>
                                     <div className="flex flex-col lg:flex-row gap-4">
                                         <div className="relative w-full">
                                             <input type="text" id="name" name="name" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-2 rounded-xl focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Full Name" onChange={handleDataChange} />
@@ -180,11 +180,11 @@ const Contact = () => {
                                         <textarea id="message" name="message" rows="5" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-2 rounded-xl focus:outline-none focus:border-primary-100 bg-transparent resize-none" placeholder="Comment" onChange={handleDataChange} />
                                     </div>
                                     <div className="w-max flex gap-2 bg-white p-1 rounded-[15px]">
-                                        <button type="submit" className="bg-black text-white border-0 h-[50px] px-3 2xl:px-6 rounded-[15px] flex items-center gap-x-2 focus:outline-none" onClick={handleFormSubmit} disabled={isDisabled}>
-                                            <span className='text-[16px] lg:text-[12px] lgB:text-[16px] xl:text-[18px] font-normal font-sans tracking-wide'>{formStatus}</span>
-                                            <Image src={arrowCta} alt="Brand" className="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] p-1 ms-2 object-contain" />
+                                        <button type="submit" className="bg-black text-white border-0 h-[40px] lg:h-[50px] px-3 2xl:px-6 rounded-[15px] flex items-center gap-x-2 focus:outline-none" onClick={handleFormSubmit} disabled={isDisabled}>
+                                            <span className='text-[16px] lg:text-[12px] xl:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide'>{formStatus}</span>
+                                            <Image src={arrowCta} alt="Brand" className="flex items-center justify-center w-[20px] h-[20px] xl:w-[30px] xl:h-[30px] p-1 object-contain" />
                                         </button>
-                                        <span className="bg-transparent text-black border-0 h-[50px] px-3 2xl:px-6 rounded-[15px] flex items-center text-[16px] lg:text-[12px] lgB:text-[16px] xl:text-[18px] font-normal font-sans tracking-wide cursor-pointer">Get To Know Us</span>
+                                        <span className="bg-transparent text-black border-0 h-[40px] lg:h-[50px] px-3 2xl:px-6 rounded-[15px] flex items-center text-[16px] lg:text-[12px] xl:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide cursor-pointer">Get To Know Us</span>
                                     </div>
                                 </form>
                             </div>

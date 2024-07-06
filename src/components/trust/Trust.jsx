@@ -18,15 +18,15 @@ import trust12 from "media/icons/trust/trustIcon12.png"
 const Trust = () => {
     return (
         <>
-            <section className="py-10 lgB:py-20">
+            <section className="py-10 lg:py-20">
                 <div className="container">
-                    <div className="heading mb-12">
+                    <div className="heading">
                         <div className="bg-[#EBEBEB] text-black border-0 w-max mx-auto h-[40px] xl:h-[45px] px-10 rounded-[45px] flex items-center cursor-pointer mb-2">
                             <span className="text-[22px] font-sans tracking-wide">World-Renowned</span>
                         </div>
                         <h2 className="text-[30px] lg:text-[50px] 2xl:text-[55px] tracking-wide font-bold font-sans text-black text-center leading-snug">Brands Trust Us</h2>
                     </div>
-                    <div className="grid grid-cols-12 gap-y-10 items-center justify-center mt-20">
+                    <div className="grid grid-cols-12 gap-y-5 md:gap-y-10 items-center justify-center mt-6 md:mt-12 xl:mt-20">
                         <div className="col-span-2">
                             <Image src={trust1} alt="Brand" className="w-[30%] mx-auto" />
                         </div>

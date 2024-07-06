@@ -9,23 +9,14 @@ export default {
       container: {
         center: true,
         padding: '1rem',
-        screens: {
-          sm: '640px',
-          md: '990px',
-          lg: '1200px',
-          xl: '1360px',
-          '2xl': '1500px',
-        }
       },
       screens: {
-        'sm': '640px',
+        'xs': { 'max': '576px' },
+        'sm': '576px',
         'md': '768px',
-        'lg': '1024px', 
-        'lgB': '1099px', 
-        'xl': '1300px',
-        '2xl': '1500px',
-        'xxl': '1700px',
-        '3xl': '1900px',
+        'lg': '992px',
+        'xl': '1200px',
+        '2xl': '1400px',
       },
       fontFamily: {
         sans: ["var(--font-primary)"],

@@ -1,12 +1,12 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "",
-  description: "",
+  title: "Top Mobile App Developmen Company - Brand",
+  description: "Top Mobile App Developmen Company",
   //===== OG Tags =====
   openGraph: {
-    title: "",
-    description: "",
+    title: "Top Mobile App Developmen Company - Brand",
+    description: "Top Mobile App Developmen Company",
     url: '/mobile-app-development',
     siteName: '',
     locale: 'en_US',

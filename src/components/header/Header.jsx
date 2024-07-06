@@ -113,7 +113,7 @@ function MegaMenu1() {
                 <MenuHandler>
                     <Link href="#" variant="small" className="font-medium">
                         <span
-                            className="flex items-center px-2 gap-2 py-2 font-poppins text-[12px] lgB:text-[16px] font-medium leading-[20px] xl:leading-[24px] hover:text-primary-100"
+                            className="flex items-center px-2 gap-2 py-2 font-poppins text-[12px] lg:text-[16px] font-medium leading-[20px] xl:leading-[24px] hover:text-primary-100"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => {
                                 if (window.innerWidth <= 991) {
@@ -201,7 +201,7 @@ function MegaMenu2() {
                 <MenuHandler>
                     <Link href="#" variant="small" className="font-medium">
                         <span
-                            className="flex items-center px-2 gap-2 py-2 font-poppins text-[12px] lgB:text-[16px] font-medium leading-[20px] xl:leading-[24px] hover:text-primary-100"
+                            className="flex items-center px-2 gap-2 py-2 font-poppins text-[12px] lg:text-[16px] font-medium leading-[20px] xl:leading-[24px] hover:text-primary-100"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => {
                                 if (window.innerWidth <= 991) {
@@ -251,7 +251,7 @@ function NavList() {
                 href="/"
                 variant="small"
                 color="black"
-                className="font-poppins text-[12px] lgB:text-[16px] font-medium hover:text-primary-100"
+                className="font-poppins text-[12px] lg:text-[16px] font-medium hover:text-primary-100"
             >
                 <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Home</span>
             </Link>
@@ -261,7 +261,7 @@ function NavList() {
                 href="#"
                 variant="small"
                 color="black"
-                className="font-poppins text-[12px] lgB:text-[16px] font-medium hover:text-primary-100"
+                className="font-poppins text-[12px] lg:text-[16px] font-medium hover:text-primary-100"
             >
                 <span className="flex items-center gap-2 p-2 xl:px-4 py-2">About</span>
             </Link>
@@ -269,7 +269,7 @@ function NavList() {
                 href="#"
                 variant="small"
                 color="black"
-                className="font-poppins text-[12px] lgB:text-[16px] font-medium hover:text-primary-100"
+                className="font-poppins text-[12px] lg:text-[16px] font-medium hover:text-primary-100"
             >
                 <span className="flex items-center gap-2 p-2 xl:px-4 py-2">
                     Contact
@@ -311,7 +311,7 @@ const Header = () => {
                         <Typography
                             href="/"
                             variant="h6"
-                            className="mr-4 cursor-pointer py-1.5 lg:ml-2 lg:w-[315px] text-[24px] font-bold"
+                            className="mr-4 cursor-pointer py-1.5 lg:ml-2 lg:w-[170px] text-[24px] font-bold"
                         >
                             Brand Name
                             {/* <Image src={logo} className="w-[45%] md:w-[28%] lg:w-[50%]" alt="Infinity Animation" /> */}

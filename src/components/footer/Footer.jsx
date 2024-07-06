@@ -153,21 +153,21 @@ const Footer = () => {
     return (
         <>
             <section className="relative pt-36 pb-10">
-                <Image src={footerBg} alt="Brand" className="absolute top-0 left-0 -z-10 w-full h-full" />
+                <Image src={footerBg} alt="Brand" fill={true} className="-z-10 object-cover object-bottom w-full h-full" />
                 <div className="container">
-                    <div className="grid grid-cols-12 pt-10 pb-16">
-                        <div className="col-span-6">
-                            <div className="grid grid-cols-12 gap-14">
-                                <div className="col-span-6">
+                    <div className="grid grid-cols-12 pt-10 pb-16 gap-y-8">
+                        <div className="col-span-12 xl:col-span-6">
+                            <div className="grid grid-cols-12 gap-y-8 xl:gap-14">
+                                <div className="col-span-12 md:col-span-6">
                                     <Link href="/" className='text-[30px] text-white font-sans tracking-wide font-bold'>Brand Name</Link>
-                                    <p className='text-[16px] text-white font-sans tracking-wide mt-4'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+                                    <p className='text-[16px] text-white font-sans tracking-wide mt-4 pe-10 xl:pe-0'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
                                     <ul className="flex items-center gap-4 mt-4 md:mt-6">
                                         {
                                             socialLinks.map((e, i) => {
                                                 return (
                                                     <li key={i} className="flex items-center justify-center p-1">
                                                         <Link target="_blank" href={e.link}>
-                                                            <Image src={e.icon} alt="Brand" className="w-[80%]" />
+                                                            <Image src={e.icon} alt="Brand" className="w-[100%] xl:w-[80%]" />
                                                         </Link>
                                                     </li>
                                                 );
@@ -175,7 +175,7 @@ const Footer = () => {
                                         }
                                     </ul>
                                 </div>
-                                <div className="col-span-6">
+                                <div className="col-span-12 md:col-span-6">
                                     <Link href="/" className='text-[20px] text-white font-sans tracking-wide font-bold'>Services</Link>
                                     <ul className='mt-3 relative'>
                                         <div className="absolute left-[-5%] h-full w-[1px] bg-white"></div>
@@ -194,9 +194,9 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-6 relative">
-                            <div className="grid grid-cols-12">
-                                <div className="col-span-6">
+                        <div className="col-span-12 xl:col-span-6 relative">
+                            <div className="grid grid-cols-12 gap-y-8">
+                                <div className="col-span-12 md:col-span-6">
                                     <Link href="/" className='text-[20px] text-white font-sans tracking-wide font-bold'>On Demand</Link>
                                     <ul className='mt-3 relative'>
                                         <div className="absolute left-[-5%] h-full w-[1px] bg-white"></div>
@@ -213,7 +213,7 @@ const Footer = () => {
                                         }
                                     </ul>
                                 </div>
-                                <div className="col-span-6">
+                                <div className="col-span-12 md:col-span-6">
                                     <Link href="/" className='text-[20px] text-white font-sans tracking-wide font-bold'>Useful Links</Link>
                                     <ul className='mt-3 relative'>
                                         <div className="absolute left-[-5%] h-full w-[1px] bg-white"></div>
@@ -232,26 +232,26 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="grid grid-cols-12 mt-16 gap-3">
-                                <div className="col-span-4">
-                                    <a href='mailto:info@brand.com' className="bg-transparent text-white border-2 border-white w-max h-[60px] rounded-[15px] flex justify-center items-center gap-2">
-                                        <Image src={email} alt="Brand" className="w-[15%]" />
-                                        <span className="text-[16px] lg:text-[12px] lgB:text-[16px] xl:text-[18px] font-normal font-sans tracking-wide">CONTACT EMAIL</span>
+                                <div className="col-span-12 md:col-span-4">
+                                    <a href='mailto:info@brand.com' className="bg-transparent text-white border-2 border-white w-[60%] md:w-[80%] xl:w-max h-[60px] rounded-[15px] flex justify-center items-center gap-2">
+                                        <Image src={email} alt="Brand" className="w-[10%] md:w-[12%]" />
+                                        <span className="text-[20px] md:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide">CONTACT EMAIL</span>
                                     </a>
                                 </div>
-                                <div className="col-span-4">
-                                    <a href='tel:123456789' className="bg-transparent text-white border-2 border-white w-max h-[60px] rounded-[15px] flex justify-center items-center gap-2">
-                                        <Image src={phone} alt="Brand" className="w-[15%]" />
-                                        <span className="text-[16px] lg:text-[12px] lgB:text-[16px] xl:text-[18px] font-normal font-sans tracking-wide">+1 312 379 5987</span>
+                                <div className="col-span-12 md:col-span-4">
+                                    <a href='tel:123456789' className="bg-transparent text-white border-2 border-white w-[60%] md:w-[80%] xl:w-max h-[60px] rounded-[15px] flex justify-center items-center gap-2">
+                                        <Image src={phone} alt="Brand" className="w-[10%] md:w-[12%]" />
+                                        <span className="text-[20px] md:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide">+1 312 379 5987</span>
                                     </a>
                                 </div>
-                                <div className="col-span-4">
-                                    <a href='tel:123456789' className="bg-transparent text-white border-2 border-white w-max h-[60px] rounded-[15px] flex justify-center items-center gap-2">
-                                        <Image src={phone} alt="Brand" className="w-[15%]" />
-                                        <span className="text-[16px] lg:text-[12px] lgB:text-[16px] xl:text-[18px] font-normal font-sans tracking-wide">+1 833 500 6007</span>
+                                <div className="col-span-12 md:col-span-4">
+                                    <a href='tel:123456789' className="bg-transparent text-white border-2 border-white w-[60%] md:w-[80%] xl:w-max h-[60px] rounded-[15px] flex justify-center items-center gap-2">
+                                        <Image src={phone} alt="Brand" className="w-[10%] md:w-[12%]" />
+                                        <span className="text-[20px] md:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide">+1 833 500 6007</span>
                                     </a>
                                 </div>
                             </div>
-                            <div className="absolute top-[25%] left-[70%]">
+                            <div className="hidden md:block absolute top-0 xl:top-[25%] left-[70%]">
                                 <Image src={footerImg} alt="Brand" className="w-[100%]" />
                             </div>
                         </div>

@@ -1,9 +1,6 @@
-"use client"
-import React from "react"
 import Image from "next/image"
-//========== Import Embla
-import useEmblaCarousel from "embla-carousel-react"
-import AutoScroll from "embla-carousel-auto-scroll"
+//========== Import Components
+import { AutoScrollSlider } from "@/components"
 //========== Import Images
 import One from "media/icons/awards/award1.png"
 import Two from "media/icons/awards/award2.png"
@@ -18,29 +15,26 @@ import Ten from "media/icons/awards/award10.png"
 import Eleven from "media/icons/awards/award11.png"
 
 
-const AwardLogos = ({
-    spacing = " "
-}) => {
-    const [emblaRef] = useEmblaCarousel({ loop: true }, [
-        AutoScroll({ playOnInit: true, stopOnInteraction: false, speed: 1, stopOnFocusIn: false })
-    ])
+const AwardLogos = () => {
     return (
-        <section className="py-10 lgB:py-20">
-            <div className={`${spacing}`}>
+        <section className="py-10 lg:py-20">
+            <div>
                 <div className="container">
                     <div className="heading mb-12">
                         <h2 className="text-[30px] lg:text-[50px] 2xl:text-[55px] tracking-wide font-bold font-sans text-black text-center leading-tight">Our Partnership And <span className="text-primary-100">Appraisals!</span> </h2>
                     </div>
-                    <div className="overflow-hidden mt-10" ref={emblaRef}>
-                        <div className="flex gap-5 [backface-visibility:hidden;] [touch-action:pan-y;] items-center">
+                    <div className="overflow-hidden mt-10">
+                        <AutoScrollSlider>
                             {
                                 [One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven].map((e, i) => (
-                                    <div key={i} className="[flex:0_0_20%] xl:[flex:0_0_16.66%]">
-                                        <Image src={e} alt={i} className="aspect-auto block mx-auto max-w-[50%]" />
+                                    <div key={i} className="grow-0 shrink-0 basis-[220px] min-w-0 pl-4">
+                                        <div>
+                                            <Image src={e} alt={i} className="aspect-auto block mx-auto max-w-[50%]" />
+                                        </div>
                                     </div>
                                 ))
                             }
-                        </div>
+                        </AutoScrollSlider>
                     </div>
                 </div>
             </div>

@@ -16,12 +16,12 @@ import "./globals.css";
 export const metadata = {
   metadataBase: new URL('https://www.bitswits.co/'),
   //===== Meta Tags =====
-  title: "",
-  description: "",
+  title: "Top Mobile App Developmen Company - Brand",
+  description: "Top Mobile App Developmen Company",
   //===== OG Tags =====
   openGraph: {
-    title: "",
-    description: "",
+    title: "Top Mobile App Developmen Company - Brand",
+    description: "Top Mobile App Developmen Company",
     url: '/',
     siteName: '',
     locale: 'en_US',
