@@ -3,8 +3,8 @@ import Image from "next/image";
 //========== Import Components
 import CTA from "@/components/cta/CTA2";
 //========== Import Images
-import heroReview3 from "media/icons/heroReview3.png"
-import heroReview4 from "media/icons/heroReview4.png"
+import heroReview3 from "/public/icons/heroreview3.png"
+import heroReview4 from "/public/icons/heroreview4.png"
 
 
 const Hero3 = ({ content }) => {
