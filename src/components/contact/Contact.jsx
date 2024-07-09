@@ -126,7 +126,7 @@ const Contact = () => {
             <section className="py-10 lg:py-20">
                 <div className="container">
                     <div className="px-4 md:px-10 lg:px-16 py-10 lg:py-20 relative z-10 rounded-[25px] overflow-hidden">
-                        <Image src={contactBg} alt="Brand" fill={true} className="-z-10 object-cover object-bottom w-full h-full" />
+                        <Image src={contactBg} alt="Brand" fill={true} className="-z-10 object-cover object-top w-full h-full" />
                         <div className="grid grid-cols-12 gap-y-6 md:gap-10">
                             <div className="col-span-12 lg:col-span-5">
                                 <div className="flex flex-col gap-2">
@@ -136,7 +136,7 @@ const Contact = () => {
                                     <div className="w-max">
                                         <CTA
                                             text="Get A Quote"
-                                            bg="bg-white text-black"
+                                            bg="bg-white !text-black"
                                         />
                                     </div>
                                     <div className="hidden lg:block absolute bottom-0 left-[10%] xl:left-[22%] -z-10">

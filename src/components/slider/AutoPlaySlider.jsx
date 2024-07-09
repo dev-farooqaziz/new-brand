@@ -7,7 +7,7 @@ import { PrevButton, NextButton, usePrevNextButtons } from "@/components/slider/
 
 export default function AutoPlaySlider({ wrapperClasses = " ", options, children, arrows = true, arrowPosition = "" }) {
     const plugins = [
-        Autoplay({ delay: 3000, stopOnFocusIn: false, stopOnInteraction: false })
+        Autoplay({ delay: 5000, stopOnFocusIn: false, stopOnInteraction: false })
     ]
     const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true, loop: true, ...options }, plugins)
 

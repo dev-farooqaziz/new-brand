@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 //========== Import Components
-import CTA from "@/components/cta/CTA";
+import CTA from "@/components/cta/CTA2";
 import { AutoPlaySlider } from "@/components";
 //========== Import Images
 import feedback from "media/images/feedback.png"
@@ -15,8 +15,8 @@ const Feedback = ({ content }) => {
         <>
             <section className="pt-10 pb-20 lg:py-20">
                 <div className="container">
-                    <div className="heading mb-12">
-                        <div className="bg-[#EBEBEB] text-black border-0 w-max h-[40px] xl:h-[45px] px-6 rounded-[45px] flex items-center cursor-pointer mb-2">
+                    <div className="mb-12">
+                        <div className="bg-[#EBEBEB] text-black border-0 w-full md:w-max h-full md:h-[40px] xl:h-[45px] px-6 py-2 md:py-0 rounded-[45px] text-center md:text-left flex justify-center md:justify-start items-center cursor-pointer mb-2">
                             <span className="text-[22px] font-sans tracking-wide">{title}</span>
                         </div>
                         <h2 className="text-[30px] lg:text-[50px] 2xl:text-[55px] tracking-wide font-bold font-sans text-black leading-snug">{subtitle}</h2>
@@ -29,7 +29,7 @@ const Feedback = ({ content }) => {
                                 <div className="w-max">
                                     <CTA
                                         text="Go To Clutch"
-                                        bg="bg-[#FBA900] text-white"
+                                        bg="bg-[#FBA900]"
                                     />
                                 </div>
                                 <div className="flex items-center justify-center gap-2">
@@ -57,7 +57,6 @@ const Feedback = ({ content }) => {
                                     </div>
                                 ))}
                             </AutoPlaySlider>
-
                         </div>
                     </div>
                 </div>

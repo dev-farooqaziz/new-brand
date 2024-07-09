@@ -13,7 +13,7 @@ const Hero = ({ content }) => {
     const { BanImg1, title, subtitle, para, title2, title3, BanImg2, title4, BanImg3, title5 } = content;
     return (
         <>
-            <section className="py-10 lg:pt-8 lg:pb-20 heroOne">
+            <section className="py-10 lg:pt-8 lg:pb-20">
                 <div className="container">
                     <div className="grid grid-cols-12 gap-5">
                         <div className="col-span-12 lg:col-span-7 relative z-10 rounded-[25px] overflow-hidden h-[500px] lg:h-full">

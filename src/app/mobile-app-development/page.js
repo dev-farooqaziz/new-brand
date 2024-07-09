@@ -5,7 +5,7 @@ import BanImg1 from "media/mobileApp/banImg-1.png"
 //========== Import FeedBack Images
 import client from "media/images/client.png"
 import stars from "media/icons/starts.png"
-//========== Import Startup Images
+//========== Import Journey Images
 import journeyBg from "media/images/journyBg.png"
 import journeyImg from "media/images/journyImg.png"
 //========== Import Technology Images

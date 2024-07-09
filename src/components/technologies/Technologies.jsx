@@ -15,7 +15,7 @@ const Technologies = ({ content }) => {
         <>
             <section className="py-10 lg:py-20">
                 <div className="container">
-                    <div className="heading">
+                    <div>
                         <h2 className="text-[30px] lg:text-[50px] 2xl:text-[55px] tracking-wide font-bold font-sans text-black text-center leading-tight">{title}</h2>
                     </div>
                     <div className="flex flex-wrap items-center justify-center gap-2 md:gap-10 my-10 xl:my-14">

@@ -27,6 +27,11 @@ const primary = localFont({
             weight: '700',
             style: 'normal',
         },
+        {
+            path: '../../fonts/SFProDisplay-Black.ttf',
+            weight: '800',
+            style: 'normal',
+        },
     ],
     variable: '--font-primary',
     subsets: ['latin'],

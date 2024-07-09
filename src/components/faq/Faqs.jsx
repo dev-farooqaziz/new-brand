@@ -15,7 +15,7 @@ const Faqs = ({ content }) => {
         <>
             <section className="py-10 lg:py-20">
                 <div className="container">
-                    <div className="heading mb-12">
+                    <div className="mb-12">
                         <h2 className="text-[30px] lg:text-[50px] 2xl:text-[55px] tracking-wide font-bold font-sans text-black text-center leading-tight">{title}</h2>
                     </div>
                     <div className="w-full">

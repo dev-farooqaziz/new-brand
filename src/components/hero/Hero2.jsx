@@ -10,11 +10,11 @@ import heroreviews from "media/icons/heroreviews.png"
 import clutchsBg from "media/mobileApp/clutchsBg.png"
 import banLogos from "media/icons/bannerLogos/banLogos.png"
 
-const Hero = ({ content }) => {
+const Hero2 = ({ content }) => {
     const { BanImg1, title, subtitle, para } = content;
     return (
         <>
-            <section className="py-10 lg:pt-8 lg:pb-20 heroOne">
+            <section className="py-10 lg:pt-8 lg:pb-20">
                 <div className="container">
                     <div className="grid grid-cols-12 gap-5">
                         <div className="col-span-12 lg:col-span-7 relative z-10 rounded-[25px] overflow-hidden h-[500px] lg:h-full">
@@ -63,4 +63,4 @@ const Hero = ({ content }) => {
         </>
     );
 }
-export default Hero;
+export default Hero2;

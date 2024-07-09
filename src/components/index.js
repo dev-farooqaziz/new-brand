@@ -23,6 +23,12 @@ const Expert = dynamic(() => import('./expert/Expert'))
 const Journey = dynamic(() => import('./journey/Journey'))
 const Trust = dynamic(() => import('./trust/Trust'))
 const Recognition = dynamic(() => import('./recognition/Recognition'))
+const Hero3 = dynamic(() => import('./hero/Hero3'))
+const Bullet = dynamic(() => import('./bullet/Bullet'))
+const Gameplay = dynamic(() => import('./gameplay/Gameplay'))
+const Game = dynamic(() => import('./game/Game'))
+const Engage = dynamic(() => import('./engage/Engage'))
+const Quote = dynamic(() => import('./quote/Quote'))
 
 export {
     AutoPlaySlider,
@@ -48,4 +54,10 @@ export {
     Journey,
     Trust,
     Recognition,
+    Hero3,
+    Bullet,
+    Gameplay,
+    Game,
+    Engage,
+    Quote,
 }

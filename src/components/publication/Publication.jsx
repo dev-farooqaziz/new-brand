@@ -22,8 +22,8 @@ const Publication = () => {
         <>
             <section className="py-10 lg:py-20">
                 <div className="container">
-                    <div className="heading mb-12">
-                        <div className="bg-[#EBEBEB] text-black border-0 w-max mx-auto h-[40px] xl:h-[45px] px-10 rounded-[45px] flex items-center cursor-pointer mb-2">
+                    <div className="mb-12">
+                        <div className="bg-[#EBEBEB] text-black border-0 w-full md:w-max h-full md:h-[40px] xl:h-[45px] mx-auto px-6 py-2 md:py-0 rounded-[45px] text-center flex justify-center items-center cursor-pointer mb-2">
                             <span className="text-[22px] font-sans tracking-wide">Publications</span>
                         </div>
                         <h2 className="text-[30px] lg:text-[50px] 2xl:text-[55px] tracking-wide font-bold font-sans text-black text-center leading-snug">Many Got Featured In Major Publications <br className="hidden lg:block" />

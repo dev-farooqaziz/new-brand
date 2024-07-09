@@ -19,7 +19,7 @@ const Who = ({ content }) => {
                             </div>
                         </div>
                         <div className="hidden lg:block absolute right-0 top-[-12%] w-[55%] 2xl:w-[50%] z-10">
-                            <Image src={whoImg} alt="Brand" className="" />
+                            <Image src={whoImg} alt="Brand" />
                         </div>
                     </div>
                 </div>

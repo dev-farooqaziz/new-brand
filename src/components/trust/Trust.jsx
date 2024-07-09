@@ -20,8 +20,8 @@ const Trust = () => {
         <>
             <section className="py-10 lg:py-20">
                 <div className="container">
-                    <div className="heading">
-                        <div className="bg-[#EBEBEB] text-black border-0 w-max mx-auto h-[40px] xl:h-[45px] px-10 rounded-[45px] flex items-center cursor-pointer mb-2">
+                    <div>
+                        <div className="bg-[#EBEBEB] text-black border-0 w-full md:w-max h-full md:h-[40px] xl:h-[45px] mx-auto px-6 py-2 md:py-0 rounded-[45px] text-center md:text-left flex justify-center items-center cursor-pointer mb-2">
                             <span className="text-[22px] font-sans tracking-wide">World-Renowned</span>
                         </div>
                         <h2 className="text-[30px] lg:text-[50px] 2xl:text-[55px] tracking-wide font-bold font-sans text-black text-center leading-snug">Brands Trust Us</h2>

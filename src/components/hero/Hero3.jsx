@@ -1,85 +1,59 @@
 import React from "react";
 import Image from "next/image";
+//========== Import Components
+import CTA from "@/components/cta/CTA2";
 //========== Import Images
-import Awards from "media/icons/bannerAwards.png"
-// import Award1 from "media/icons/award-1.png"
-// import Award2 from "media/icons/award-2.png"
-// import Award3 from "media/icons/award-3.png"
-// import Award4 from "media/icons/award-4.png"
-import ArrowBlk from "media/icons/arrowBlk.png"
-import ArrowOrg from "media/icons/arrowOrg.png"
+import heroReview3 from "media/icons/heroReview3.png"
+import heroReview4 from "media/icons/heroReview4.png"
 
-const Hero = ({ content }) => {
-    const { BanImg1, title, subtitle, para, title2, title3, BanImg2, title4, BanImg3, title5 } = content;
+
+const Hero3 = ({ content }) => {
+    const { BanImg1, title, subtitle, para, heroImg } = content;
     return (
         <>
-            <section className="py-10 lg:pt-8 lg:pb-20 heroOne">
+            <section className="py-10 xl:pt-8 xl:pb-20">
                 <div className="container">
-                    <div className="grid grid-cols-12 gap-5">
-                        <div className="col-span-12 lg:col-span-7 relative z-10 rounded-[25px] overflow-hidden h-[500px] lg:h-full">
-                            <Image src={BanImg1} alt="Brand" fill={true} className="-z-10 object-cover object-bottom" />
-                            <div className="mt-12">
-                                <h1 className="text-[16px] xl:text-[20px] 2xl:text-[24px] tracking-wide font-semibold font-sans text-white backdrop-blur-sm bg-white/20 py-2 px-6 lg:px-8 xl:px-12">{title}</h1>
-                                <h2 className="text-[28px] lg:text-[34px] xl:text-[40px] 2xl:text-[50px] tracking-wide font-semibold font-sans text-white my-3 xl:my-5 leading-tight px-6 lg:px-8 xl:px-12">{subtitle}</h2>
-                                <p className="text-[15px] tracking-wide font-poppins text-white ps-6 lg:ps-8 xl:ps-12 pe-6 md:pe-[40px] xl:pe-[60px]">{para}</p>
-                            </div>
-                            <div className="absolute right-[-15%] md:right-[-3%] bottom-[3%]">
-                                <a href="tel:123456789">
-                                    <Image src={ArrowBlk} alt="Brand" className="w-[50%] md:w-[60%] bg-white/20 p-2 rounded-full" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-span-12 lg:col-span-5">
-                            <div className="grid grid-cols-1 gap-5">
-                                <div className="bg-[#D7D8DC] rounded-[25px] px-5 py-8">
-                                    <h3 className="text-[18px] xl:text-[20px] tracking-wide font-bold font-sans text-black mb-0">{title2}</h3>
-                                    <h4 className="text-[28px] lg:text-[34px] xl:text-[40px] 2xl:text-[50px] tracking-wide font-bold font-sans text-black leading-tight my-4 lg:mt-6 lg:mb-8">{title3}</h4>
-                                    <div className="flex">
-                                        {/* <div className="w-full">
-                                            <Image src={Award1} alt="Brand" className="w-[70%] mx-auto mb-2" />
-                                            <p className="text-[14px] lg:text-[10px] xl:text-[12px] font-sans text-center">Top Mobile Application <br /> Developers</p>
-                                        </div>
-                                        <div className="w-full">
-                                            <Image src={Award2} alt="Brand" className="w-[70%] mx-auto mb-2" />
-                                            <p className="text-[14px] lg:text-[10px] xl:text-[12px] font-sans text-center">Top Mobile Application <br /> Developers 2022</p>
-                                        </div>
-                                        <div className="w-full">
-                                            <Image src={Award3} alt="Brand" className="w-[70%] mx-auto mb-2" />
-                                            <p className="text-[14px] lg:text-[10px] xl:text-[12px] font-sans text-center">Top Application <br /> Development Company</p>
-                                        </div>
-                                        <div className="w-full">
-                                            <Image src={Award4} alt="Brand" className="w-[70%] mx-auto mb-2" />
-                                            <p className="text-[14px] lg:text-[10px] xl:text-[12px] font-sans text-center">Top Mobile Application <br /> Development Company</p>
-                                        </div> */}
-                                        <Image src={Awards} alt="Brand" />
-                                    </div>
+                    <div className="grid grid-cols-12 gap-5 relative z-10 rounded-[25px] overflow-hidden h-full xl:h-[92vh] py-10 lg:py-0">
+                        <Image src={BanImg1} alt="Brand" fill={true} className="-z-10 object-cover object-bottom" />
+                        <div className="col-span-12 lg:col-span-6">
+                            <div className="px-6 lg:px-12 h-full flex flex-col justify-center">
+                                <h1 className="text-[14px] md:text-[16px] xl:text-[20px] 2xl:text-[24px] tracking-wide font-semibold font-sans text-white rounded-full backdrop-blur-sm bg-black/50 py-2 px-4 ms-[-1%]">{title}</h1>
+                                <h2 className="text-[24px] md:text-[28px] lg:text-[34px] xl:text-[40px] 2xl:text-[50px] tracking-wide font-semibold font-sans text-white mt-3 xl:mt-5 leading-tight">{subtitle}</h2>
+                                {para ? (
+                                    <p className="text-[15px] tracking-wide font-poppins text-white mt-3 xl:mt-5">{para}</p>
+                                ) : null}
+                                <div className="flex flex-col md:flex-row md:items-center justify-start gap-5 mt-8 mb-10 w-max md:w-auto">
+                                    <CTA
+                                        text="Book A Call"
+                                        bg="bg-[#FBA900] text-white"
+                                    />
+                                    <CTA
+                                        text="Let's Connect"
+                                        bg="bg-[#FBA900] text-white"
+                                        href="javascript:$zopim.livechat.window.show();"
+                                    />
                                 </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                    <div className="relative z-10 rounded-[25px] overflow-hidden h-[260px] lg:h-[180px] xl:h-[240px]">
-                                        <Image src={BanImg2} alt="Brand" fill={true} className="-z-10 object-cover object-center" />
-                                        <div className="content absolute bottom-[8%] left-[5%] lg:left-[8%] w-full flex items-center justify-between">
-                                            <h5 className="text-[20px] md:text-[16px] xl:text-[20px] tracking-wide font-semibold font-sans text-white leading-tight w-full">{title4}</h5>
-                                            <a href="tel:123456789">
-                                                <Image src={ArrowOrg} alt="Brand" className="w-[50%]" />
-                                            </a>
-                                        </div>
+                                <div className="flex items-center gap-10">
+                                    <div className="flex items-center justify-center">
+                                        <Image src={heroReview3} alt="Brand" />
                                     </div>
-                                    <div className="relative z-10 rounded-[25px] overflow-hidden h-[260px] lg:h-[180px] xl:h-[240px]">
-                                        <Image src={BanImg3} alt="Brand" fill={true} className="-z-10 object-cover object-center" />
-                                        <div className="content absolute bottom-[8%] left-[5%] lg:left-[8%] w-full flex items-center justify-between">
-                                            <h5 className="text-[20px] md:text-[16px] xl:text-[20px] tracking-wide font-semibold font-sans text-white leading-tight w-full">{title5}</h5>
-                                            <a href="tel:123456789">
-                                                <Image src={ArrowOrg} alt="Brand" className="w-[50%]" />
-                                            </a>
-                                        </div>
+                                    <div className="flex items-center justify-center">
+                                        <Image src={heroReview4} alt="Brand" />
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        {heroImg ? (
+                            <div className="col-span-5 lg:col-span-6 hidden lg:block">
+                                <div>
+                                    <Image src={heroImg} alt="Brand" />
+                                </div>
+                            </div>
+                        ) : null}
                     </div>
                 </div>
             </section>
         </>
     );
 }
-export default Hero;
+export default Hero3;
