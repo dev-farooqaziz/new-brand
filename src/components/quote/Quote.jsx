@@ -27,7 +27,7 @@ const Quote = () => {
                                             bg="bg-transparent !border-2 border-white"
                                         />
                                     </div>
-                                    <Image src={quoteArrow} alt="Brand" className="absolute bottom-[10%] xl:bottom-[5%] right-[-45%] w-[60%] hidden lg:block" />
+                                    <Image src={quoteArrow} alt="Brand" className="absolute bottom-[10%] xl:bottom-[5%] right-[-45%] xl:right-[-33%] w-[60%] xl:w-[54%] 2xl:w-[55%] hidden lg:block" />
                                 </div>
                             </div>
                             <div className="col-span-12 lg:col-span-4 my-5 lg:my-0">
@@ -54,7 +54,7 @@ const Quote = () => {
                                             bg="bg-transparent !border-2 border-white"
                                         />
                                     </div>
-                                    <Image src={quoteArrow2} alt="Brand" className="absolute bottom-[10%] xl:bottom-[5%] left-[-45%] w-[60%] hidden lg:block" />
+                                    <Image src={quoteArrow2} alt="Brand" className="absolute bottom-[10%] xl:bottom-[5%] left-[-45%] xl:left-[-33%] w-[60%] xl:w-[54%] 2xl:w-[55%] hidden lg:block" />
                                 </div>
                             </div>
                         </div>

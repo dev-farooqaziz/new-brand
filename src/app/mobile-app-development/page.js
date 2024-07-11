@@ -67,27 +67,27 @@ export default function Home() {
   //=============== Expert ===============
   const expertServices = [
     {
-      title: "iOS Application Development",
+      title: (<> iOS Application <br /> Development </>),
       description: "We bring your iOS app ideas to life by using our comprehensive approach to development, combining UI/UX app design."
     },
     {
-      title: "Android Application Development",
+      title: (<> Android Application <br /> Development </>),
       description: "We take Android app development to the next level by following a comprehensive approach, from ideation to launch."
     },
     {
-      title: "React Native App Development",
+      title: <> React Native App <br /> Development </>,
       description: "BitsWits' skilled Flutter developers create tailored cross-platform mobile apps using the latest tools and techniques for your business needs."
     },
     {
-      title: "Flutter App Development",
+      title: (<> Flutter App <br /> Development </>),
       description: "Our team of expert Flutter app developers at BitsWits use the latest tools and techniques."
     },
     {
-      title: "Cross Platform App Development",
+      title: (<> Cross Platform App <br /> Development </>),
       description: "We prioritize creating seamless user experiences in cross-platform app development."
     },
     {
-      title: "Web App Development",
+      title: (<> Web App <br /> Development </>),
       description: "We offer end-to-end web app development company. Our team of skilled web app developers utilizes the latest technologies."
     }
   ];
@@ -98,6 +98,7 @@ export default function Home() {
     para: (<> No matter what your niche is, we will help build mobile apps for your business. Choose our best application <br /> development company for building apps in any business vertical. </>),
     expertServices: expertServices,
     bg: "bg-[#EEEEEE]",
+    textColor:"text-black",
     cta: true,
   };
   //=============== Journey ===============

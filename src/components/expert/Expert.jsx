@@ -4,7 +4,7 @@ import CTA from "@/components/cta/CTA";
 
 
 const Expert = ({ content }) => {
-    const { subtitle, title, para, expertServices, bg, cta } = content;
+    const { subtitle, title, para, expertServices, bg, textColor, cta } = content;
     return (
         <>
             <section className="py-10 lg:py-20">
@@ -19,11 +19,11 @@ const Expert = ({ content }) => {
                     <div className="grid grid-cols-12 gap-5">
                         {expertServices.map((item, index) => (
                             <div key={index} className="col-span-12 md:col-span-6 lg:col-span-4">
-                                <div className={`${bg} py-6 xl:py-10 px-4 xl:px-8 rounded-[25px] h-full flex flex-col justify-center`}>
-                                    <h4 className="text-[20px] lg:text-[24px] 2xl:text-[30px] tracking-wide font-bold font-sans text-black leading-tight mb-5">
+                                <div className={`${bg} py-6 xl:py-10 px-4 xl:px-8 rounded-[25px] h-full flex flex-col`}>
+                                    <h4 className={`text-[20px] lg:text-[24px] tracking-wide font-bold font-sans ${textColor} leading-tight mb-5`}>
                                         {item.title}
                                     </h4>
-                                    <p className="text-[15px] tracking-wide font-poppins text-black">
+                                    <p className={`text-[15px] tracking-wide font-poppins ${textColor}`}>
                                         {item.description}
                                     </p>
                                 </div>

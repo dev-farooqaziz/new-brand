@@ -29,6 +29,11 @@ const Gameplay = dynamic(() => import('./gameplay/Gameplay'))
 const Game = dynamic(() => import('./game/Game'))
 const Engage = dynamic(() => import('./engage/Engage'))
 const Quote = dynamic(() => import('./quote/Quote'))
+const Provide = dynamic(() => import('./provide/Provide'))
+const Cryptocurrency = dynamic(() => import('./cryptocurrency/Cryptocurrency'))
+const Hero4 = dynamic(() => import('./hero/Hero4'))
+const Showcasing = dynamic(() => import('./showcasing/Showcasing'))
+const Development = dynamic(() => import('./development/Development'))
 
 export {
     AutoPlaySlider,
@@ -60,4 +65,9 @@ export {
     Game,
     Engage,
     Quote,
+    Provide,
+    Cryptocurrency,
+    Hero4,
+    Showcasing,
+    Development,
 }

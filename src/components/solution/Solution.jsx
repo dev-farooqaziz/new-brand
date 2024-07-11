@@ -20,7 +20,9 @@ const Solution = ({ content }) => {
                             </div>
                         ) : null}
                         <h2 className="text-[30px] lg:text-[50px] 2xl:text-[55px] tracking-wide font-bold font-sans text-black text-center leading-tight">{title}</h2>
-                        <p className="text-[15px] tracking-wide font-poppins text-black text-center my-4 lg:my-6">{para}</p>
+                        {para ? (
+                            <p className="text-[15px] tracking-wide font-poppins text-black text-center my-4 lg:my-6">{para}</p>
+                        ) : null}
                     </div>
                     <AutoPlaySlider options={{ align: "start" }} arrowPosition="absolute bottom-[-5%] md:bottom-[-5%] left-[3%] xl:left-[2%]">
                         {solutions.map((item, index) => (
