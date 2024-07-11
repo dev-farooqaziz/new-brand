@@ -18,17 +18,22 @@ const Provide = ({ content }) => {
                         {para ? (
                             <p className="text-[15px] tracking-wide font-poppins text-black text-center my-4 lg:my-6">{para}</p>
                         ) : null}
-
                     </div>
 
                     <div className="grid grid-cols-12 relative z-10 rounded-[25px] overflow-hidden px-10 py-12">
                         <Image src={bg} alt="Brand" fill={true} className="-z-10 object-cover object-center" />
                         <div className="col-span-6">
-                            <div className="">
-                                <h3 className={`text-[26px] tracking-wide font-bold font-sans ${textColor} leading-tight`}>
-                                    {heading}
-                                </h3>
-                                <p className={`text-[14px] tracking-wide font-poppins ${textColor} mt-4`}>{text}</p>
+                            <div>
+                                {heading ? (
+                                    <h3 className={`text-[26px] tracking-wide font-bold font-sans ${textColor} leading-tight`}>
+                                        {heading}
+                                    </h3>
+                                ) : null}
+
+                                {text ? (
+                                    <p className={`text-[14px] tracking-wide font-poppins ${textColor} mt-4`}>{text}</p>
+                                ) : null}
+
                                 {provideData.map((item, index) => (
                                     <div className="flex flex-col mt-8" key={index}>
                                         <div className="flex items-center gap-4">

@@ -20,7 +20,9 @@ import marketPlace from "media/blockchain/marketBg.png"
 import marketIcn1 from "media/icons/blockIcons/marketIcn1.png"
 import marketIcn2 from "media/icons/blockIcons/marketIcn2.png"
 import marketIcn3 from "media/icons/blockIcons/marketIcn3.png"
-
+//========== Import Cryptocurrency Images
+import cryptoImg1 from "media/blockchain/cryptoImg1.png"
+import cryptoIcn1 from "media/icons/blockIcons/cryptoIcn1.png"
 //========== Import Technology Images
 import tech1 from "media/icons/blockTech/techIcn1.png"
 import tech2 from "media/icons/blockTech/techIcn2.png"
@@ -172,8 +174,31 @@ export default function Home() {
     text: "We leverage third-party blockchain software solutions to develop protected, trusted, and scalable Blockchain Applications designed to support a wide range of plugins, reduce losses, avoid fraud, eliminate expensive intermediary fees, boost local & international trade, distribute sensitive information, and so much more in a centralized platform.",
     provideData: bustData,
   };
-  //=============== Mining ===============
-
+  //=============== CryptoCurrency ===============
+  const crypto = [
+    {
+      img: cryptoImg1,
+      icon: cryptoIcn1,
+      title: 'Cryptocurrency Mining Software',
+      para: 'We integrate Application-Specific Integrated Circuit (ASIC) chips within existing cryptocurrency mining software to accelerate transaction verifications, along with designing decentralized networks for mining pools, creating miner performance dashboards, and providing architecture solutions for mining farms.',
+    },
+    {
+      img: cryptoImg1,
+      icon: cryptoIcn1,
+      title: 'Cryptocurrency Mining Software',
+      para: 'We integrate Application-Specific Integrated Circuit (ASIC) chips within existing cryptocurrency mining software to accelerate transaction verifications, along with designing decentralized networks for mining pools, creating miner performance dashboards, and providing architecture solutions for mining farms.',
+    },
+    {
+      img: cryptoImg1,
+      icon: cryptoIcn1,
+      title: 'Cryptocurrency Mining Software',
+      para: 'We integrate Application-Specific Integrated Circuit (ASIC) chips within existing cryptocurrency mining software to accelerate transaction verifications, along with designing decentralized networks for mining pools, creating miner performance dashboards, and providing architecture solutions for mining farms.',
+    },
+  ];
+  //===============
+  const cryptoCurrency = {
+    cryptoCurrency: crypto,
+  };
   //=============== Custom ===============
   const customServices = [
     {
@@ -309,7 +334,7 @@ export default function Home() {
       <Provide content={provideContent} />
       <Expert content={AnalysisContent} />
       <Provide content={bustContent} />
-      <Cryptocurrency />
+      <Cryptocurrency content={cryptoCurrency} />
       <Expert content={customContent} />
       <Technologies content={techContent} />
       <Provide content={marketplaceContent} />

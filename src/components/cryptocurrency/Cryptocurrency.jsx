@@ -2,33 +2,10 @@ import React from "react";
 import Image from "next/image";
 //========== Import Components
 import { AutoPlaySlider } from "@/components";
-//========== Import Images
-import miningImg from "media/blockchain/mining.png"
-import miningIcn from "media/icons/blockIcons/mineIcn1.png"
 
 
-const cryptoCurrency = [
-    {
-        img: miningImg,
-        icon: miningIcn,
-        title: 'Cryptocurrency Mining Software',
-        para: 'We integrate Application-Specific Integrated Circuit (ASIC) chips within existing cryptocurrency mining software to accelerate transaction verifications, along with designing decentralized networks for mining pools, creating miner performance dashboards, and providing architecture solutions for mining farms.',
-    },
-    {
-        img: miningImg,
-        icon: miningIcn,
-        title: 'Cryptocurrency Mining Software',
-        para: 'We integrate Application-Specific Integrated Circuit (ASIC) chips within existing cryptocurrency mining software to accelerate transaction verifications, along with designing decentralized networks for mining pools, creating miner performance dashboards, and providing architecture solutions for mining farms.',
-    },
-    {
-        img: miningImg,
-        icon: miningIcn,
-        title: 'Cryptocurrency Mining Software',
-        para: 'We integrate Application-Specific Integrated Circuit (ASIC) chips within existing cryptocurrency mining software to accelerate transaction verifications, along with designing decentralized networks for mining pools, creating miner performance dashboards, and providing architecture solutions for mining farms.',
-    },
-];
-
-const Cryptocurrency = () => {
+const Cryptocurrency = ({ content }) => {
+    const { cryptoCurrency } = content;
     return (
         <>
             <section className="pt-10 pb-20">

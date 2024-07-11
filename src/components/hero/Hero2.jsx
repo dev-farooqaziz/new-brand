@@ -19,7 +19,7 @@ const Hero2 = ({ content }) => {
                     <div className="grid grid-cols-12 gap-5">
                         <div className="col-span-12 lg:col-span-7 relative z-10 rounded-[25px] overflow-hidden h-[500px] lg:h-full">
                             <Image src={BanImg1} alt="Brand" fill={true} className="-z-10 object-cover object-bottom" />
-                            <div className="mt-12">
+                            <div className="mt-10">
                                 <h1 className="text-[16px] xl:text-[20px] 2xl:text-[24px] tracking-wide font-semibold font-sans text-white backdrop-blur-sm bg-white/20 py-2 px-6 lg:px-8 xl:px-12">{title}</h1>
                                 <h2 className="text-[26px] lg:text-[34px] xl:text-[40px] 2xl:text-[50px] tracking-wide font-semibold font-sans text-white my-3 xl:my-5 leading-tight px-6 lg:px-8 xl:px-12">{subtitle}</h2>
                                 <p className="text-[15px] tracking-wide font-poppins text-white ps-6 lg:ps-8 xl:ps-12 pe-6 md:pe-[40px] xl:pe-[60px]">{para}</p>
