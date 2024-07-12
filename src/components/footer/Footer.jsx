@@ -39,89 +39,89 @@ const Footer = () => {
     const quickLinks = [
         {
             text: "Ios App Development",
-            link: "/"
+            link: "/ios-app-development"
         },
         {
             text: "Mobile App Development",
-            link: "javascript:;"
+            link: "/mobile-app-development"
         },
         {
             text: "Android App Development",
-            link: "javascript:;"
+            link: "/android-app-development"
         },
         {
             text: "Flutter App Development",
-            link: "javascript:;"
+            link: "#"
         },
         {
             text: "React Native App Development",
-            link: "javascript:;"
+            link: "#"
         },
         {
             text: "Hybrid Mobile Apps Development",
-            link: "javascript:;"
+            link: "#"
         },
         {
             text: "Cross Platform App Development",
-            link: "javascript:;"
+            link: "#"
         },
         {
             text: "Web App Development",
-            link: "javascript:;"
+            link: "/web-app-development"
         },
         {
             text: "Augmented Reality Apps Development",
-            link: "javascript:;"
+            link: "#"
         },
         {
             text: "Custom Mobile Development",
-            link: "javascript:;"
+            link: "/web-development"
         },
         {
             text: "ECommerce services",
-            link: "javascript:;"
+            link: "#"
         },
         {
             text: "Enterprise Portal Solution",
-            link: "javascript:;"
+            link: "#"
         },
         {
             text: "Magento Enterprise Solution",
-            link: "javascript:;"
+            link: "#"
         },
     ];
     const servicesLinks = [
         {
             text: "Game App Development",
-            link: "javascript:;"
+            link: "/game-app-development"
         },
         {
             text: "2D Game Development",
-            link: "javascript:;"
+            link: "#"
         },
         {
             text: "3D Game Development",
-            link: "javascript:;"
+            link: "#"
         },
         {
             text: "NFT Game Development",
-            link: "javascript:;"
+            link: "#"
         },
         {
             text: "Blockchain Game Development",
-            link: "javascript:;"
+            link: "#"
         },
         {
             text: "Blockchain Development",
-            link: "javascript:;"
+            link: "/blockchain-development"
         },
         {
             text: "Artificial Intelligence",
-            link: "javascript:;"
+            link: "/blockchain-development"
         },
         {
             text: "Social Media App Development",
-            link: "javascript:;"
+            link: "#"
         },
     ];
     const useFullLinks = [
@@ -161,13 +161,13 @@ const Footer = () => {
                                 <div className="col-span-12 md:col-span-6">
                                     <Link href="/" className='text-[30px] text-white font-sans tracking-wide font-bold'>Brand Name</Link>
                                     <p className='text-[16px] text-white font-sans tracking-wide mt-4 pe-10 xl:pe-0'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
-                                    <ul className="flex items-center gap-4 mt-4 md:mt-6">
+                                    <ul className="flex items-center gap-2 md:gap-0 mt-4 md:mt-6">
                                         {
                                             socialLinks.map((e, i) => {
                                                 return (
                                                     <li key={i} className="flex items-center justify-center p-1">
                                                         <Link target="_blank" href={e.link}>
-                                                            <Image src={e.icon} alt="Brand" className="w-[100%] xl:w-[80%]" />
+                                                            <Image src={e.icon} alt="Brand" className="w-[80%] lg:w-[70%]" />
                                                         </Link>
                                                     </li>
                                                 );

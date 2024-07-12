@@ -95,7 +95,10 @@ export default function Home() {
     title: "Dynamic User Design Services For Smarter User Navigation",
     para: (<> The key to developing a successful app is marrying the functionality your users demand with an intuitive design and experience that make it as simple <br /> as possible to use. Chetu’s UI/UX experts will design the perfect web, desktop, or mobile app to meet your specific business requirements, industry needs, <br /> and product development goals. We design and develop innovative digital user experiences that solve complex business problems. </>),
     bg: provideImg,
+    bgColor: "bg-black lg:bg-none",
     textColor: "text-white",
+    heading: "User Design Services",
+    text: "Bitswits is a leading development company that can help you hit the market with a newly developed Blockchain solution or revamp your existing systems. Our Blockchain Development promotes business growth while transforming companies and establishing improved business models with custom cryptocurrencies, consensus algorithms, individual nodes, and architectures.",
     provideData: provideData,
   };
   //=============== Journey ===============

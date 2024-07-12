@@ -72,13 +72,13 @@ const Showcasing = () => {
                         <h2 className="text-[30px] lg:text-[50px] 2xl:text-[55px] tracking-wide font-bold font-sans text-black text-center leading-tight">Showcasing Our Creative Vision</h2>
                         <p className="text-[15px] tracking-wide font-poppins text-black text-justify lg:text-center my-4 lg:my-6 px-0 lg:px-16">Experience the fusion of imagination and expertise as we present our innovative solutions tailored to inspire and captivate. Dive <br /> into a realm where creativity knows no bounds, and witness the manifestation of our visionary prowess.</p>
                     </div>
-                    <AutoPlaySlider arrowPosition="absolute bottom-[-10%] left-[1%]">
+                    <AutoPlaySlider arrowPosition="absolute bottom-[-10%] left-[5%] md:left-[3%] lg:left-[1%]">
                         {caseData.map((item, index) => (
-                            <div key={index} className="grow-0 shrink-0 basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5 hover:basis-[40%] pl-4 group">
+                            <div key={index} className="grow-0 shrink-0 basis-[100%] md:basis-[50%] lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5 md:hover:basis-[60%] lg:hover:basis-[40%] pl-4 group">
                                 <div className="relative z-10 rounded-[25px] overflow-hidden h-[350px] xl:h-[400px]">
                                     <Image src={item.caseBg} alt="Brand" fill={true} className="-z-10 object-cover object-center" />
                                     <div className="flex flex-col items-center group-hover:items-start justify-center group-hover:justify-between h-full px-5 group-hover:pt-10 relative">
-                                        <div className="hidden group-hover:block absolute right-[-6%] top-[5%]">
+                                        <div className="hidden group-hover:block absolute right-[-4%] lg:right-[-6%] top-[5%]">
                                             <Link href="#">
                                                 <Image src={ArrowBlk} alt="Brand" className="w-[50%]" />
                                             </Link>

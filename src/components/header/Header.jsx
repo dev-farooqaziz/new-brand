@@ -19,52 +19,52 @@ const megaMenuItems = [
     {
         title: "Mobile App Development",
         icon: SquaresPlusIcon,
-        href: "#",
+        href: "/mobile-app-development",
     },
     {
         title: "Game App Development",
         icon: UserGroupIcon,
-        href: "#",
+        href: "/game-app-development",
     },
     {
         title: "Blockchain Development",
         icon: Bars4Icon,
-        href: "/architectural-visualization",
+        href: "/blockchain-development",
     },
     {
         title: "Artificial Intelligence",
         icon: SunIcon,
-        href: "/cgi-and-vfx-services",
+        href: "/artificial-intelligence",
     },
     {
         title: "Web App Development",
         icon: GlobeAmericasIcon,
-        href: "/hybrid-&-cel-animations",
+        href: "/web-app-development",
     },
     {
         title: "Business Intelligence ",
         icon: PhoneIcon,
-        href: "/infographics-design",
+        href: "/business-intelligence",
     },
     {
         title: "Web Development",
         icon: NewspaperIcon,
-        href: "/custom-logo-animation",
+        href: "/web-development",
     },
     {
         title: "UI UX App Design",
         icon: RectangleGroupIcon,
-        href: "/motion-graphics",
+        href: "/uiux-development",
     },
     {
-        title: "Ios",
+        title: "Ios App Development",
         icon: TagIcon,
-        href: "/video-editing",
+        href: "/ios-app-development",
     },
     {
-        title: "Android",
+        title: "Android App Development",
         icon: UserGroupIcon,
-        href: "/whiteboard-animation",
+        href: "/android-app-development",
     },
 ];
 

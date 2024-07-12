@@ -34,7 +34,6 @@ import tech7 from "media/icons/blockTech/techIcn7.png"
 import tech8 from "media/icons/blockTech/techIcn8.png"
 
 
-
 export default function Home() {
   //=============== Hero ===============
   const heroContent = {
@@ -104,6 +103,7 @@ export default function Home() {
     title: "We Provide Blockchain Development Services",
     para: (<> Our software developers are highly proficient in building blockchain technologies from scratch and customizing existing blockchain solutions <br /> through software integrations, functionality modifications, and feature implementations. </>),
     bg: provideImg,
+    bgColor: "bg-black lg:bg-none",
     textColor: "text-white",
     heading: "Blockchain Technology Development",
     text: "Bitswits is a leading development company that can help you hit the market with a newly developed Blockchain solution or revamp your existing systems. Our Blockchain Development promotes business growth while transforming companies and establishing improved business models with custom cryptocurrencies, consensus algorithms, individual nodes, and architectures.",
@@ -169,6 +169,7 @@ export default function Home() {
     title: "We Build Custom Blockchain Applications",
     para: (<> Bitswits designs and integrates custom Blockchain Applications into existing enterprise systems for businesses to leverage a safe, <br /> secure environment for diverse business transactions. </>),
     bg: bustImg,
+    bgColor: "bg-[#EEEEEE] lg:bg-none",
     textColor: "text-black",
     heading: "Blockchain Application Development",
     text: "We leverage third-party blockchain software solutions to develop protected, trusted, and scalable Blockchain Applications designed to support a wide range of plugins, reduce losses, avoid fraud, eliminate expensive intermediary fees, boost local & international trade, distribute sensitive information, and so much more in a centralized platform.",
@@ -293,6 +294,7 @@ export default function Home() {
     title: "Custom NFT Marketplace Development",
     para: (<> We offer custom designs and development services for NFT marketplaces where digital assets of users are minted to NFTs and sold or <br /> auctioned to other individuals. </>),
     bg: marketPlace,
+    bgColor: "bg-[#EEEEEE] lg:bg-none",
     textColor: "text-black",
     heading: "Blockchain Security",
     text: "We create blockchain security software that identifies and addresses the fundamental elements of a cross-industry standard for shared and distributed ledgers while transforming how businesses conduct transactions globally.",

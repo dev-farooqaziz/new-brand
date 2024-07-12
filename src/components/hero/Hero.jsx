@@ -16,16 +16,16 @@ const Hero = ({ content }) => {
             <section className="py-10 lg:pt-8 lg:pb-20">
                 <div className="container">
                     <div className="grid grid-cols-12 gap-5">
-                        <div className="col-span-12 lg:col-span-7 relative z-10 rounded-[25px] overflow-hidden h-[500px] lg:h-full">
-                            <Image src={BanImg1} alt="Brand" fill={true} className="-z-10 object-cover object-bottom" />
+                        <div className="col-span-12 lg:col-span-7 relative z-10 rounded-[25px] overflow-hidden pb-16 lg:pb-0 h-full bg-black lg:bg-none">
+                            <Image src={BanImg1} alt="Brand" fill={true} className="hidden lg:block -z-10 object-cover object-bottom" />
                             <div className="mt-12">
                                 <h1 className="text-[16px] xl:text-[20px] 2xl:text-[24px] tracking-wide font-semibold font-sans text-white backdrop-blur-sm bg-white/20 py-2 px-6 lg:px-8 xl:px-12">{title}</h1>
                                 <h2 className="text-[28px] lg:text-[34px] xl:text-[40px] 2xl:text-[50px] tracking-wide font-semibold font-sans text-white my-3 xl:my-5 leading-tight px-6 lg:px-8 xl:px-12">{subtitle}</h2>
                                 <p className="text-[15px] tracking-wide font-poppins text-white ps-6 lg:ps-8 xl:ps-12 pe-6 md:pe-[40px] xl:pe-[60px]">{para}</p>
                             </div>
-                            <div className="absolute right-[-15%] md:right-[-3%] bottom-[3%]">
+                            <div className="absolute right-[-5%] md:right-[-2%] lg:right-[-3%] bottom-[4%] lg:bottom-[3%]">
                                 <a href="tel:123456789">
-                                    <Image src={ArrowBlk} alt="Brand" className="w-[50%] md:w-[60%] bg-white/20 p-2 rounded-full" />
+                                    <Image src={ArrowBlk} alt="Brand" className="w-[50%] md:w-[60%] bg-white/50 lg:bg-white/20 p-2 rounded-full" />
                                 </a>
                             </div>
                         </div>
@@ -57,8 +57,8 @@ const Hero = ({ content }) => {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                     <div className="relative z-10 rounded-[25px] overflow-hidden h-[260px] lg:h-[180px] xl:h-[240px]">
                                         <Image src={BanImg2} alt="Brand" fill={true} className="-z-10 object-cover object-center" />
-                                        <div className="content absolute bottom-[8%] left-[5%] lg:left-[8%] w-full flex items-center justify-between">
-                                            <h5 className="text-[20px] md:text-[16px] xl:text-[20px] tracking-wide font-semibold font-sans text-white leading-tight w-full">{title4}</h5>
+                                        <div className="absolute bottom-[8%] left-[5%] lg:left-[8%] w-full flex items-center justify-between">
+                                            <h5 className="text-[20px] md:text-[16px] xl:text-[20px] tracking-wide font-semibold font-sans text-white leading-tight md:w-full">{title4}</h5>
                                             <a href="tel:123456789">
                                                 <Image src={ArrowOrg} alt="Brand" className="w-[50%]" />
                                             </a>
@@ -66,8 +66,8 @@ const Hero = ({ content }) => {
                                     </div>
                                     <div className="relative z-10 rounded-[25px] overflow-hidden h-[260px] lg:h-[180px] xl:h-[240px]">
                                         <Image src={BanImg3} alt="Brand" fill={true} className="-z-10 object-cover object-center" />
-                                        <div className="content absolute bottom-[8%] left-[5%] lg:left-[8%] w-full flex items-center justify-between">
-                                            <h5 className="text-[20px] md:text-[16px] xl:text-[20px] tracking-wide font-semibold font-sans text-white leading-tight w-full">{title5}</h5>
+                                        <div className="absolute bottom-[8%] left-[5%] lg:left-[8%] w-full flex items-center justify-between">
+                                            <h5 className="text-[20px] md:text-[16px] xl:text-[20px] tracking-wide font-semibold font-sans text-white leading-tight md:w-full">{title5}</h5>
                                             <a href="tel:123456789">
                                                 <Image src={ArrowOrg} alt="Brand" className="w-[50%]" />
                                             </a>

@@ -7,13 +7,13 @@ export const metadata = {
   openGraph: {
     title: "Top Mobile App Developmen Company - Brand",
     description: "Top Mobile App Developmen Company",
-    url: '/artificial-intelligence',
+    url: '/web-development',
     siteName: '',
     locale: 'en_US',
     type: 'website',
   },
   //===== Canonical =====
-  alternates: { canonical: '/artificial-intelligence' },
+  alternates: { canonical: '/web-development' },
 }
 
 export default function RootLayout({ children }) {

@@ -34,6 +34,10 @@ const Cryptocurrency = dynamic(() => import('./cryptocurrency/Cryptocurrency'))
 const Hero4 = dynamic(() => import('./hero/Hero4'))
 const Showcasing = dynamic(() => import('./showcasing/Showcasing'))
 const Development = dynamic(() => import('./development/Development'))
+const CustomBi = dynamic(() => import('./custombi/CustomBi'))
+const UniqueModel = dynamic(() => import('./uniquemodel/UniqueModel'))
+const Process = dynamic(() => import('./process/Process'))
+const FullStack = dynamic(() => import('./fullstack/FullStack'))
 
 export {
     AutoPlaySlider,
@@ -70,4 +74,8 @@ export {
     Hero4,
     Showcasing,
     Development,
+    CustomBi,
+    UniqueModel,
+    Process,
+    FullStack,
 }
