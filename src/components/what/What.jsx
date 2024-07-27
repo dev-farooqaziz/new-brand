@@ -17,7 +17,7 @@ const What = ({ content }) => {
                         <div className="col-span-12 lg:col-span-6 order-0 lg:order-none">
                             <h2 className="text-[30px] lg:text-[50px] 2xl:text-[55px] tracking-wide font-bold font-sans text-black leading-tight">{title}</h2>
                             <h3 className="text-[20px] lg:text-[32px] 2xl:text-[40px] tracking-wide font-semibold font-sans text-black my-3 xl:my-5 leading-tight">{subtitle}</h3>
-                            <p className="text-[15px] tracking-wide font-poppins text-black mb-4 lg:mb-8">{para}/</p>
+                            <p className="text-[15px] tracking-wide font-poppins text-black mb-4 lg:mb-8">{para}</p>
                             <div className="w-max">
                                 <CTA
                                     text="Get To Know Us"

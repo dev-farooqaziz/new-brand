@@ -21,7 +21,7 @@ const Hero2 = ({ content }) => {
                             <Image src={BanImg1} alt="Brand" fill={true} className="hidden lg:block -z-10 object-cover object-bottom" />
                             <div className="mt-10">
                                 <h1 className="text-[16px] xl:text-[20px] 2xl:text-[24px] tracking-wide font-semibold font-sans text-white backdrop-blur-sm bg-white/20 py-2 px-6 lg:px-8 xl:px-12">{title}</h1>
-                                <h2 className="text-[26px] lg:text-[34px] xl:text-[40px] 2xl:text-[50px] tracking-wide font-semibold font-sans text-white my-3 xl:my-5 leading-tight px-6 lg:px-8 xl:px-12">{subtitle}</h2>
+                                <h2 className="text-[26px] lg:text-[34px] xl:text-[40px] 2xl:text-[50px] tracking-wide font-semibold font-sans text-white leading-tight my-3 xl:my-5 pt-3 lg:pt-0 px-6 lg:px-8 xl:px-12">{subtitle}</h2>
                                 <p className="text-[15px] tracking-wide font-poppins text-white ps-6 lg:ps-8 xl:ps-12 pe-6 md:pe-[40px] xl:pe-[60px]">{para}</p>
                             </div>
                             <div className="absolute right-[-5%] md:right-[-2%] lg:right-[-3%] bottom-[4%] lg:bottom-[3%]">

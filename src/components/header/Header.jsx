@@ -4,347 +4,234 @@ import Link from "next/link";
 //========== Import Components
 import CTA from "@/components/cta/CTA";
 //========== Import Icons
-import {
-    Navbar, Collapse, Typography, List, Menu, MenuHandler, MenuList, MenuItem,
-} from "@material-tailwind/react";
-import {
-    ChevronDownIcon, Bars3Icon, XMarkIcon, ChevronRightIcon,
-} from "@heroicons/react/24/outline";
-import {
-    Bars4Icon, GlobeAmericasIcon, NewspaperIcon, PhoneIcon, RectangleGroupIcon, SquaresPlusIcon, SunIcon, TagIcon, UserGroupIcon,
-} from "@heroicons/react/24/solid";
-
-
-const megaMenuItems = [
-    {
-        title: "Mobile App Development",
-        icon: SquaresPlusIcon,
-        href: "/mobile-app-development",
-    },
-    {
-        title: "Game App Development",
-        icon: UserGroupIcon,
-        href: "/game-app-development",
-    },
-    {
-        title: "Blockchain Development",
-        icon: Bars4Icon,
-        href: "/blockchain-development",
-    },
-    {
-        title: "Artificial Intelligence",
-        icon: SunIcon,
-        href: "/artificial-intelligence",
-    },
-    {
-        title: "Web App Development",
-        icon: GlobeAmericasIcon,
-        href: "/web-app-development",
-    },
-    {
-        title: "Business Intelligence ",
-        icon: PhoneIcon,
-        href: "/business-intelligence",
-    },
-    {
-        title: "Web Development",
-        icon: NewspaperIcon,
-        href: "/web-development",
-    },
-    {
-        title: "UI UX App Design",
-        icon: RectangleGroupIcon,
-        href: "/uiux-development",
-    },
-    {
-        title: "Ios App Development",
-        icon: TagIcon,
-        href: "/ios-app-development",
-    },
-    {
-        title: "Android App Development",
-        icon: UserGroupIcon,
-        href: "/android-app-development",
-    },
-];
-
-function MegaMenu1() {
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-    const renderItems = megaMenuItems.map(
-        ({ icon, title, href }, key) => (
-            <div key={key}>
-                <MenuItem className="flex items-center gap-3 rounded-lg mb-1 lg:mb-0">
-                    <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2">
-                        {" "}
-                        {React.createElement(icon, {
-                            strokeWidth: 2,
-                            className: "h-6 text-gray-900 w-6 text-black",
-                        })}
-                    </div>
-                    <div>
-                        <Link
-                            href={href}
-                            variant="h6"
-                            color="black"
-                            className="flex items-center font-poppins text-[16px] font-normal text-black hover:text-primary-100 h-full"
-                        >
-                            {title}
-                        </Link>
-                    </div>
-                </MenuItem>
-            </div>
-        ),
-    );
-    // Mobile Mega Menu 
-    const [megamenu, setMegaMenu] = React.useState(false);
-    const handleMegaMenu = () => {
-        setMegaMenu((prev) => !prev);
-    }
-    return (
-        <React.Fragment>
-            <Menu
-                open={isMenuOpen}
-                handler={setIsMenuOpen}
-                offset={{ mainAxis: 20 }}
-                placement="bottom"
-                allowHover={true}
-            >
-                <MenuHandler>
-                    <Link href="#" variant="small" className="font-medium">
-                        <span
-                            className="flex items-center px-2 gap-2 py-2 font-poppins text-[12px] lg:text-[16px] font-medium leading-[20px] xl:leading-[24px] hover:text-primary-100"
-                            selected={isMenuOpen || isMobileMenuOpen}
-                            onClick={() => {
-                                if (window.innerWidth <= 991) {
-                                    handleMegaMenu();
-                                } else {
-                                    setIsMobileMenuOpen((cur) => !cur)
-                                }
-                            }}
-                        >
-                            Services
-                            <ChevronDownIcon
-                                strokeWidth={2.5}
-                                className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
-                                    }`}
-                            />
-                            <ChevronRightIcon
-                                strokeWidth={2.5}
-                                className={`block h-3 w-3 mt-1 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
-                                    }`}
-                            />
-                        </span>
-                    </Link>
-                </MenuHandler>
-                <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-                    <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
-                        {renderItems}
-                    </ul>
-                </MenuList>
-            </Menu>
-            <div className={megamenu ? `absolute left-[0%] top-0 pt-5 bg-white w-full h-full transition-all duration-300 ease-in-out` : `lg:hidden absolute left-[-130%] top-0 pt-5 bg-white w-full h-full transition-all duration-300 ease-in-out`}>
-                <Collapse open={isMobileMenuOpen} className="h-full overflow-visible">{renderItems}</Collapse>
-                <div className="absolute top-[10px] right-[10px] bg-black rounded-full p-1" onClick={() => handleMegaMenu()}>
-                    <XMarkIcon
-                        strokeWidth={2.5}
-                        className={`block h-5 w-5 transition-transform text-white lg:hidden`}
-                    />
-                </div>
-            </div>
-        </React.Fragment>
-    );
-}
-
-function MegaMenu2() {
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-    const renderItems = megaMenuItems.map(
-        ({ icon, title, href }, key) => (
-            <div key={key}>
-                <MenuItem className="flex items-center gap-3 rounded-lg mb-1 lg:mb-0">
-                    <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2">
-                        {" "}
-                        {React.createElement(icon, {
-                            strokeWidth: 2,
-                            className: "h-6 text-gray-900 w-6 text-black",
-                        })}
-                    </div>
-                    <div>
-                        <Link
-                            href={href}
-                            variant="h6"
-                            color="black"
-                            className="flex items-center font-poppins text-[16px] font-normal text-black hover:text-primary-100 h-full"
-                        >
-                            {title}
-                        </Link>
-                    </div>
-                </MenuItem>
-            </div>
-        ),
-    );
-    // Mobile Mega Menu 
-    const [megamenu, setMegaMenu] = React.useState(false);
-    const handleMegaMenu = () => {
-        setMegaMenu((prev) => !prev);
-    }
-    return (
-        <React.Fragment>
-            <Menu
-                open={isMenuOpen}
-                handler={setIsMenuOpen}
-                offset={{ mainAxis: 20 }}
-                placement="bottom"
-                allowHover={true}
-            >
-                <MenuHandler>
-                    <Link href="#" variant="small" className="font-medium">
-                        <span
-                            className="flex items-center px-2 gap-2 py-2 font-poppins text-[12px] lg:text-[16px] font-medium leading-[20px] xl:leading-[24px] hover:text-primary-100"
-                            selected={isMenuOpen || isMobileMenuOpen}
-                            onClick={() => {
-                                if (window.innerWidth <= 991) {
-                                    handleMegaMenu();
-                                } else {
-                                    setIsMobileMenuOpen((cur) => !cur)
-                                }
-                            }}
-                        >
-                            Our Work
-                            <ChevronDownIcon
-                                strokeWidth={2.5}
-                                className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
-                                    }`}
-                            />
-                            <ChevronRightIcon
-                                strokeWidth={2.5}
-                                className={`block h-3 w-3 mt-1 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
-                                    }`}
-                            />
-                        </span>
-                    </Link>
-                </MenuHandler>
-                <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-                    <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
-                        {renderItems}
-                    </ul>
-                </MenuList>
-            </Menu>
-            <div className={megamenu ? `absolute left-[0%] top-0 pt-5 bg-white w-full h-full transition-all duration-300 ease-in-out` : `lg:hidden absolute left-[-130%] top-0 pt-5 bg-white w-full h-full transition-all duration-300 ease-in-out`}>
-                <Collapse open={isMobileMenuOpen} className="h-full overflow-visible">{renderItems}</Collapse>
-                <div className="absolute top-[10px] right-[10px] bg-black rounded-full p-1" onClick={() => handleMegaMenu()}>
-                    <XMarkIcon
-                        strokeWidth={2.5}
-                        className={`block h-5 w-5 transition-transform text-white lg:hidden`}
-                    />
-                </div>
-            </div>
-        </React.Fragment>
-    );
-}
-
-function NavList() {
-    return (
-        <List className="mt-4 lg:mt-0 mb-0 p-0 pb-4 lg:pb-0 lg:flex-row lg:p-1 gap-3 bg-black lg:bg-transparent border-b-2 border-[prime/100] lg:border-0">
-            <Link
-                href="/"
-                variant="small"
-                color="black"
-                className="font-poppins text-[12px] lg:text-[16px] font-medium hover:text-primary-100"
-            >
-                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Home</span>
-            </Link>
-            <MegaMenu1 />
-            <MegaMenu2 />
-            <Link
-                href="#"
-                variant="small"
-                color="black"
-                className="font-poppins text-[12px] lg:text-[16px] font-medium hover:text-primary-100"
-            >
-                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">About</span>
-            </Link>
-            <Link
-                href="#"
-                variant="small"
-                color="black"
-                className="font-poppins text-[12px] lg:text-[16px] font-medium hover:text-primary-100"
-            >
-                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">
-                    Contact
-                </span>
-            </Link>
-        </List>
-    );
-}
+import { FaAngleDoubleLeft, FaAngleDown, FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
-    const [openNav, setOpenNav] = React.useState(false);
-
-    React.useEffect(() => {
-        window.addEventListener(
-            "resize",
-            () => window.innerWidth >= 1099 && setOpenNav(false),
-        );
-    }, []);
-    // ===============================================
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isFixed, setIsFixed] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+    const [isMegaMenuOpen2, setIsMegaMenuOpen2] = useState(false);
+    // ========= Header Fixed
     useEffect(() => {
         const handleScroll = () => {
-            const scrollTop = window.scrollY;
-            setIsScrolled(scrollTop > 1);
+            if (window.scrollY > 100) {
+                setIsFixed(true);
+            } else {
+                setIsFixed(false);
+            }
         };
 
         window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+    // ========= Mobile Menu
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+    // ========= MegaMenu1
+    const toggleMegaMenu = () => {
+        setIsMegaMenuOpen(!isMegaMenuOpen);
+    };
+    // ========= MegaMenu2
+    const toggleMegaMenu2 = () => {
+        setIsMegaMenuOpen2(!isMegaMenuOpen2);
+    };
 
     return (
-        <header className={`w-full z-[999] rounded-none pt-5 ${isScrolled ? '' : 'bg-transparent'}`}>
-            <div className="container">
-                <Navbar className="max-w-none shadow-none px-0 py-2 rounded-none bg-transparent border-none">
-                    <div className="flex items-center justify-between text-black relative">
-                        <Typography
-                            href="/"
-                            variant="h6"
-                            className="mr-4 cursor-pointer py-1.5 lg:ml-2 lg:w-[170px] text-[24px] font-bold"
-                        >
+
+        <header className={`w-full z-[999] rounded-none h-[80px] flex items-center ${isFixed ? 'fixed top-0 left-0 w-full bg-white shadow-md duration-1000 ease-in-out' : 'static duration-1000 ease-in-out'}`}>
+            <div className="container h-full flex items-center">
+                <nav className="w-full h-full flex items-center justify-between mx-auto bg-transparent">
+                    <div className="w-full lg:w-auto h-full flex flex-wrap items-center justify-between">
+                        <a href="/" className="h-full flex items-center text-[24px] font-bold font-sans text-black cursor-pointer lg:w-[160px] xl:w-[180px] lg:ml-2">
                             Brand Name
-                            {/* <Image src={logo} className="w-[45%] md:w-[28%] lg:w-[50%]" alt="Infinity Animation" /> */}
-                        </Typography>
-                        <div className="hidden lg:flex items-center justify-between w-[100%] gap-5">
-                            <NavList />
-                            <div className="flex gap-2 bg-[#DFDFDF] p-1 rounded-[15px]">
-                                <CTA
-                                    text="Get To Know Us"
-                                    href="javascript:;"
-                                />
-                                <CTA
-                                    text="Get A Quote"
-                                    bg="bg-black text-white"
-                                />
-                            </div>
+                        </a>
+                        <div className={`w-[85%] md:w-[80%] lg:w-auto h-[100vh] lg:h-full flex items-center fixed top-0 z-50 lg:static bg-[#484848] lg:bg-transparent ${isMenuOpen ? 'left-0 duration-700 ease-in-out' : 'left-[-100%] duration-700 ease-in-out'}`} id="navbar-default">
+                            <ul className="w-full h-full flex lg:items-center flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-6 xl:space-x-10 rtl:space-x-reverse p-5 lg:p-0 relative">
+                                <Link href="/" className="text-[34px] font-bold font-sans text-white cursor-pointer block lg:hidden">
+                                    Brand Name
+                                </Link>
+                                <li className="lg:h-full flex lg:items-center">
+                                    <Link href="#" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium font-poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>Home</Link>
+                                </li>
+                                <li className="lg:h-full flex lg:items-center group">
+                                    <Link href="#" className="lg:h-full flex items-center gap-[2px] text-[20px] lg:text-[16px] font-medium font-poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMegaMenu}>
+                                        <span>Services</span>
+                                        <FaAngleDown className="mt-[1px]" />
+                                    </Link>
+                                    <div className="w-full h-full lg:h-auto flex flex-col lg:flex-row items-center gap-5 lg:gap-10 p-5 rounded-none lg:rounded-xl absolute top-0 lg:top-[-1150%] left-[-100%] lg:left-[4%] group-hover:left-[0%] lg:group-hover:top-[100%] duration-1000 ease-in-out bg-black">
+                                        <div className="w-full flex lg:hidden items-center justify-between mb-5">
+                                            <Link href="/" className="text-left text-[34px] font-bold font-sans text-white cursor-pointer block lg:hidden" onClick={toggleMenu}>
+                                                Brand Name
+                                            </Link>
+                                            <FaAngleDoubleLeft className="text-[30px] text-white" onClick={toggleMegaMenu} />
+                                        </div>
+                                        <ul className="flex flex-col space-y-10 lg:space-y-5 w-full mb-5 lg:mb-0">
+                                            <li className="cursor-pointer">
+                                                <Link href="/mobile-app-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Mobile App Development</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/game-app-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Game App Development</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/blockchain-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Blockchain Development</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/artificial-intelligence" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Artificial Intelligence</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/web-app-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Web App Development</Link>
+                                            </li>
+                                        </ul>
+                                        <ul className="flex flex-col space-y-10 lg:space-y-5 w-full">
+                                            <li className="cursor-pointer">
+                                                <Link href="/business-intelligence" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Business Intelligence</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/web-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Web Development</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/uiux-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    UI UX App Design</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/ios-app-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Ios App Development</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/android-app-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Android App Development</Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li className="lg:h-full flex lg:items-center group">
+                                    <Link href="#" className="lg:h-full flex items-center gap-[2px] text-[20px] lg:text-[16px] font-medium font-poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMegaMenu2}>
+                                        <span>Our Work</span>
+                                        <FaAngleDown className="mt-[1px]" />
+                                    </Link>
+                                    <div className="w-full h-full lg:h-auto flex flex-col lg:flex-row items-center gap-5 lg:gap-10 p-5 rounded-none lg:rounded-xl absolute top-0 lg:top-[-1150%] left-[-100%] lg:left-[4%] group-hover:left-[0%] lg:group-hover:top-[100%] duration-1000 ease-in-out bg-black">
+                                        <div className="w-full flex lg:hidden items-center justify-between mb-5">
+                                            <Link href="/" className="text-left text-[34px] font-bold font-sans text-white cursor-pointer" onClick={toggleMenu}>
+                                                Brand Name
+                                            </Link>
+                                            <FaAngleDoubleLeft className="text-[30px] text-white" onClick={toggleMegaMenu2} />
+                                        </div>
+                                        <ul className="flex flex-col space-y-10 lg:space-y-5 w-full">
+                                            <li className="cursor-pointer">
+                                                <Link href="/business-intelligence" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Business Intelligence</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/web-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Web Development</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/uiux-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    UI UX App Design</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/ios-app-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Ios App Development</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/android-app-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Android App Development</Link>
+                                            </li>
+                                        </ul>
+                                        <ul className="flex flex-col space-y-10 lg:space-y-5 w-full mb-5 lg:mb-0">
+                                            <li className="cursor-pointer">
+                                                <Link href="/mobile-app-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Mobile App Development</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/game-app-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Game App Development</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/blockchain-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Blockchain Development</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/artificial-intelligence" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Artificial Intelligence</Link>
+                                            </li>
+                                            <li className="cursor-pointer">
+                                                <Link href="/web-app-development" className="text-[16px] lg:text-[12px] xl:text-[15px] font-medium font-poppins text-[#b8b8b8] hover:text-primary-100 flex items-center gap-5 lg:gap-2" onClick={toggleMenu}>
+                                                    <FaTimes className="text-[20px]" />
+                                                    Web App Development</Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li className="lg:h-full flex lg:items-center">
+                                    <Link href="#" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium font-poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>About</Link>
+                                </li>
+                                <li className="lg:h-full flex lg:items-center">
+                                    <Link href="#" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium font-poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>Contact</Link>
+                                </li>
+                                <div className="w-max flex lg:hidden items-center gap-2 bg-[#DFDFDF] p-1 rounded-[15px]">
+                                    <CTA
+                                        text="Get To Know Us"
+                                        href="javascript:;"
+                                    />
+                                    <CTA
+                                        text="Get A Quote"
+                                        bg="bg-black text-white"
+                                    />
+                                </div>
+                            </ul>
                         </div>
-                        <button onClick={() => setOpenNav(!openNav)} className="block lg:hidden">
-                            {openNav ? (
-                                <XMarkIcon className="h-[40px] w-[40px]" strokeWidth={2} />
-                            ) : (
-                                <Bars3Icon className="h-[40px] w-[40px]" strokeWidth={2} />
-                            )}
-                        </button>
                     </div>
-                    {openNav && (
-                        <Collapse open={openNav} className="block lg:hidden">
-                            <NavList />
-                        </Collapse>
-                    )}
-                </Navbar>
+                    <div className="hidden lg:flex items-center gap-2 bg-[#DFDFDF] p-1 rounded-[15px]">
+                        <CTA
+                            text="Get To Know Us"
+                            href="javascript:;"
+                        />
+                        <CTA
+                            text="Get A Quote"
+                            bg="bg-black text-white"
+                        />
+                    </div>
+                    <div className="block lg:hidden w-max9">
+                        {isMenuOpen ? (
+                            <FaTimes className="text-[30px] cursor-pointer" onClick={toggleMenu} />
+                        ) : (
+                            <FaBars className="text-[30px] cursor-pointer" onClick={toggleMenu} />
+                        )}
+                    </div>
+                </nav>
             </div>
         </header>
     );
 }
 export default Header;
+
+
+

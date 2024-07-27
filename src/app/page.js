@@ -180,7 +180,7 @@ export default function Home() {
   //===============
   const industryContent = {
     title: "Industry We Serve",
-    para: "No matter what your niche is, we will help build mobile apps for your business. Choose our best application <br /> development company for building apps in any business vertical.",
+    para: (<> No matter what your niche is, we will help build mobile apps for your business. Choose our best application <br className="hidden lg:block" /> development company for building apps in any business vertical. </>),
     industries: industries,
   };
   //=============== Work ===============
@@ -204,7 +204,7 @@ export default function Home() {
   //===============
   const workContent = {
     title: "We Work With",
-    para: (<> No matter what your niche is, we will help build mobile apps for your business. Choose our best application <br /> development company for building apps in any business vertical. </>),
+    para: (<> No matter what your niche is, we will help build mobile apps for your business. Choose our best application <br className="hidden lg:block" /> development company for building apps in any business vertical. </>),
     workData: workData
   };
   //=============== Startup ===============
@@ -373,7 +373,7 @@ export default function Home() {
   //=============== 
   const solutionContent = {
     title: (<> Trusted Development Company <br /> For Tech Solutions </>),
-    para: (<> No matter what your niche is, we will help build mobile apps for your business. Choose our best application <br /> development company for building apps in any business vertical. </>),
+    para: (<> No matter what your niche is, we will help build mobile apps for your business. Choose our best application <br className="hidden lg:block" /> development company for building apps in any business vertical. </>),
     solutions: solutions,
   };
   //=============== Faqs ===============
