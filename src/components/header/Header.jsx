@@ -39,7 +39,7 @@ const Header = () => {
 
     return (
 
-        <header className={`w-full z-[999] rounded-none h-[80px] flex items-center ${isFixed ? 'fixed top-0 left-0 w-full bg-white shadow-md duration-1000 ease-in-out' : 'static duration-1000 ease-in-out'}`}>
+        <header className={`w-full z-[999] rounded-none h-[80px] flex items-center ${isFixed ? 'fixed top-0 left-0 w-full bg-white shadow-md duration-1000 ease-in-out' : 'static duration-1000 ease-in-out shadow-md lg:shadow-none'}`}>
             <div className="container h-full flex items-center">
                 <nav className="w-full h-full flex items-center justify-between mx-auto bg-transparent">
                     <div className="w-full lg:w-auto h-full flex flex-wrap items-center justify-between">
@@ -47,19 +47,19 @@ const Header = () => {
                             Brand Name
                         </a>
                         <div className={`w-[85%] md:w-[80%] lg:w-auto h-[100vh] lg:h-full flex items-center fixed top-0 z-50 lg:static bg-[#484848] lg:bg-transparent ${isMenuOpen ? 'left-0 duration-700 ease-in-out' : 'left-[-100%] duration-700 ease-in-out'}`} id="navbar-default">
-                            <ul className="w-full h-full flex lg:items-center flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-6 xl:space-x-10 rtl:space-x-reverse p-5 lg:p-0 relative">
+                            <ul className="w-full h-full flex lg:items-center flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-6 xl:space-x-10 rtl:space-x-reverse p-5 lg:p-0 relative lg:bg-white">
                                 <Link href="/" className="text-[34px] font-bold font-sans text-white cursor-pointer block lg:hidden">
                                     Brand Name
                                 </Link>
                                 <li className="lg:h-full flex lg:items-center">
-                                    <Link href="#" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium font-poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>Home</Link>
+                                    <Link href="/" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium font-poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>Home</Link>
                                 </li>
                                 <li className="lg:h-full flex lg:items-center group">
                                     <Link href="#" className="lg:h-full flex items-center gap-[2px] text-[20px] lg:text-[16px] font-medium font-poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMegaMenu}>
                                         <span>Services</span>
                                         <FaAngleDown className="mt-[1px]" />
                                     </Link>
-                                    <div className="w-full h-full lg:h-auto flex flex-col lg:flex-row items-center gap-5 lg:gap-10 p-5 rounded-none lg:rounded-xl absolute top-0 lg:top-[-1150%] left-[-100%] lg:left-[4%] group-hover:left-[0%] lg:group-hover:top-[100%] duration-1000 ease-in-out bg-black">
+                                    <div className={`w-full h-full lg:h-auto flex flex-col lg:flex-row items-center gap-5 lg:gap-10 p-5 rounded-none lg:rounded-xl bg-black absolute z-10 lg:-z-10 top-0 lg:top-[-1150%] lg:left-[0%] lg:group-hover:top-[100%] duration-1000 ease-in-out ${isMegaMenuOpen ? 'left-0 duration-700 ease-in-out' : 'left-[-100%]'}`}>
                                         <div className="w-full flex lg:hidden items-center justify-between mb-5">
                                             <Link href="/" className="text-left text-[34px] font-bold font-sans text-white cursor-pointer block lg:hidden" onClick={toggleMenu}>
                                                 Brand Name
@@ -127,7 +127,7 @@ const Header = () => {
                                         <span>Our Work</span>
                                         <FaAngleDown className="mt-[1px]" />
                                     </Link>
-                                    <div className="w-full h-full lg:h-auto flex flex-col lg:flex-row items-center gap-5 lg:gap-10 p-5 rounded-none lg:rounded-xl absolute top-0 lg:top-[-1150%] left-[-100%] lg:left-[4%] group-hover:left-[0%] lg:group-hover:top-[100%] duration-1000 ease-in-out bg-black">
+                                    <div className={`w-full h-full lg:h-auto flex flex-col lg:flex-row items-center gap-5 lg:gap-10 p-5 rounded-none lg:rounded-xl bg-black absolute lg:-z-10 top-0 lg:top-[-1150%] lg:left-[0%] lg:group-hover:top-[100%] duration-1000 ease-in-out ${isMegaMenuOpen2 ? 'left-0 duration-700 ease-in-out' : 'left-[-100%]'}`}>
                                         <div className="w-full flex lg:hidden items-center justify-between mb-5">
                                             <Link href="/" className="text-left text-[34px] font-bold font-sans text-white cursor-pointer" onClick={toggleMenu}>
                                                 Brand Name
@@ -191,15 +191,15 @@ const Header = () => {
                                     </div>
                                 </li>
                                 <li className="lg:h-full flex lg:items-center">
-                                    <Link href="#" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium font-poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>About</Link>
+                                    <Link href="#about-us" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium font-poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>About</Link>
                                 </li>
                                 <li className="lg:h-full flex lg:items-center">
-                                    <Link href="#" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium font-poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>Contact</Link>
+                                    <Link href="#contact-us" className="lg:h-full flex lg:items-center text-[20px] lg:text-[16px] font-medium font-poppins text-white lg:text-black hover:text-primary-100" onClick={toggleMenu}>Contact</Link>
                                 </li>
                                 <div className="w-max flex lg:hidden items-center gap-2 bg-[#DFDFDF] p-1 rounded-[15px]">
                                     <CTA
                                         text="Get To Know Us"
-                                        href="javascript:;"
+                                        href="tel:123456789"
                                     />
                                     <CTA
                                         text="Get A Quote"
@@ -212,7 +212,7 @@ const Header = () => {
                     <div className="hidden lg:flex items-center gap-2 bg-[#DFDFDF] p-1 rounded-[15px]">
                         <CTA
                             text="Get To Know Us"
-                            href="javascript:;"
+                            href="tel:123456789"
                         />
                         <CTA
                             text="Get A Quote"

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 //========== Import Components
 import { AutoPlaySlider } from "@/components";
 //========== Import Images
@@ -79,9 +78,9 @@ const Showcasing = () => {
                                     <Image src={item.caseBg} alt="Brand" fill={true} className="-z-10 object-cover object-center" />
                                     <div className="flex flex-col items-center group-hover:items-start justify-center group-hover:justify-between h-full px-5 group-hover:pt-10 relative">
                                         <div className="hidden group-hover:block absolute right-[-4%] lg:right-[-6%] top-[5%]">
-                                            <Link href="#">
+                                            <a href="tel:0123456789">
                                                 <Image src={ArrowBlk} alt="Brand" className="w-[50%]" />
-                                            </Link>
+                                            </a>
                                         </div>
                                         <div className="flex flex-col items-center group-hover:items-start justify-center">
                                             <Image src={item.icon} alt="Brand" className="block group-hover:hidden w-[50%]" />

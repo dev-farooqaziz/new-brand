@@ -38,10 +38,10 @@ const Technologies = ({ content }) => {
                         ))}
                     </div>
                     <div>
-                        <div className="flex flex-wrap gap-8 md:gap-20 justify-center">
+                        <div className="flex flex-wrap gap-8 md:gap-x-20 md:gap-y-10 lg:gap-20 justify-center">
                             {techData[activeTab].techItems.map((techItem, index) => (
                                 <div key={index} className="flex flex-col gap-3 justify-between items-center">
-                                    <Image src={techItem.src} alt="Brand" className="w-[50%] mx-auto" />
+                                    <Image src={techItem.src} alt="Brand" className="w-[30px] md:w-[50px] lg:w-[50%] mx-auto" />
                                     <p className="text-[16px] tracking-wide font-sans text-black">{techItem.text}</p>
                                 </div>
                             ))}

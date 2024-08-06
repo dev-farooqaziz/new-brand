@@ -184,7 +184,7 @@ const Contact = () => {
                                             <span className='text-[16px] lg:text-[12px] xl:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide'>{formStatus}</span>
                                             <Image src={arrowCta} alt="Brand" className="flex items-center justify-center w-[20px] h-[20px] xl:w-[30px] xl:h-[30px] p-1 object-contain" />
                                         </button>
-                                        <span className="bg-transparent text-black border-0 h-[40px] lg:h-[50px] px-3 2xl:px-6 rounded-[15px] flex items-center text-[16px] lg:text-[12px] xl:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide cursor-pointer">Get To Know Us</span>
+                                        <a href='tel:0123456789' className="bg-transparent text-black border-0 h-[40px] lg:h-[50px] px-3 2xl:px-6 rounded-[15px] flex items-center text-[16px] lg:text-[12px] xl:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide cursor-pointer">Get To Know Us</a>
                                     </div>
                                 </form>
                             </div>

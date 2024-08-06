@@ -28,7 +28,7 @@ const Industry = ({ content }) => {
                             </div>
                         ))}
                     </div>
-                </div>9
+                </div>
             </section>
         </>
     );

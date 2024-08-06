@@ -11,7 +11,7 @@ const Hero3 = ({ content }) => {
     const { BanImg1, title, subtitle, para } = content;
     return (
         <>
-            <section className="py-10 xl:pt-8 xl:pb-20">
+            <section className="py-6 md:py-10 xl:pt-8 xl:pb-20">
                 <div className="container">
                     <div className="grid grid-cols-12 gap-5 relative z-10 rounded-[25px] overflow-hidden h-full xl:h-[92vh] py-10 lg:py-0 bg-black lg:bg-none">
                         <Image src={BanImg1} alt="Brand" fill={true} className="hidden lg:block -z-10 object-cover object-bottom" />

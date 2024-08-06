@@ -28,11 +28,11 @@ const Faqs = ({ content }) => {
                                     <span className="text-[18px] md:text-[20px] text-black font-sans font-bold text-left">{item.question}</span>
                                     <span>
                                         {activeIndex === index ? (
-                                            <div className='flex items-center justify-center p-3 rounded-full border-[2px] border-black transform rotate-0 w-[40px] md:w-[20px] h-[40px] md:h-[20px]'>
+                                            <div className='flex items-center justify-center p-3 rounded-full border-[2px] border-black transform rotate-0 w-[40px] h-[40px]'>
                                                 <Image src={arrowOrg} alt='Brand' />
                                             </div>
                                         ) : (
-                                            <div className='flex items-center justify-center p-3 rounded-full border-[2px] border-black transform rotate-180 w-[40px] md:w-[20px] h-[40px] md:h-[20px]'>
+                                            <div className='flex items-center justify-center p-3 rounded-full border-[2px] border-black transform rotate-180 w-[40px] h-[40px]'>
                                                 <Image src={arrowOrg} alt='Brand' />
                                             </div>
                                         )}

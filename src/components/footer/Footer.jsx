@@ -17,23 +17,23 @@ const Footer = () => {
     const socialLinks = [
         {
             icon: facebook,
-            link: "javascript:;"
+            link: "https://www.facebook.com/"
         },
         {
             icon: twitter,
-            link: "javascript:;"
+            link: "https://x.com/"
         },
         {
             icon: instagram,
-            link: "javascript:;"
+            link: "https://www.instagram.com/"
         },
         {
             icon: linkedin,
-            link: "javascript:;"
+            link: "https://www.linkedin.com/"
         },
         {
             icon: youtube,
-            link: "javascript:;"
+            link: "https://www.youtube.com/"
         }
     ]
     const quickLinks = [
@@ -51,19 +51,19 @@ const Footer = () => {
         },
         {
             text: "Flutter App Development",
-            link: "#"
+            link: "#flutter-app-development"
         },
         {
             text: "React Native App Development",
-            link: "#"
+            link: "#react-native-app-development"
         },
         {
             text: "Hybrid Mobile Apps Development",
-            link: "#"
+            link: "#hybrid-mobile-app-development"
         },
         {
             text: "Cross Platform App Development",
-            link: "#"
+            link: "#cross-platform-app-development"
         },
         {
             text: "Web App Development",
@@ -71,7 +71,7 @@ const Footer = () => {
         },
         {
             text: "Augmented Reality Apps Development",
-            link: "#"
+            link: "#augmented-reality-app-development"
         },
         {
             text: "Custom Mobile Development",
@@ -79,15 +79,11 @@ const Footer = () => {
         },
         {
             text: "ECommerce services",
-            link: "#"
+            link: "#ecommerce-services"
         },
         {
             text: "Enterprise Portal Solution",
-            link: "#"
-        },
-        {
-            text: "Magento Enterprise Solution",
-            link: "#"
+            link: "#enterprise-portal-solution"
         },
     ];
     const servicesLinks = [
@@ -97,19 +93,19 @@ const Footer = () => {
         },
         {
             text: "2D Game Development",
-            link: "#"
+            link: "#2d-game-app-development"
         },
         {
             text: "3D Game Development",
-            link: "#"
+            link: "#3d-game-app-development"
         },
         {
             text: "NFT Game Development",
-            link: "#"
+            link: "#nft-game-app-development"
         },
         {
             text: "Blockchain Game Development",
-            link: "#"
+            link: "#blockchain-game-app-development"
         },
         {
             text: "Blockchain Development",
@@ -117,37 +113,37 @@ const Footer = () => {
         },
         {
             text: "Artificial Intelligence",
-            link: "/blockchain-development"
+            link: "/artificial-intelligence"
         },
         {
             text: "Social Media App Development",
-            link: "#"
+            link: "#social-media-app-development"
         },
     ];
     const useFullLinks = [
         {
             text: "Contact Us",
-            link: "javascript:;"
+            link: "#contact-us"
         },
         {
             text: "About Us",
-            link: "javascript:;"
+            link: "#about-us"
         },
         {
-            text: "Works",
-            link: "javascript:;"
+            text: "Our Work",
+            link: "#our-work"
         },
         {
             text: "Blogs",
-            link: "javascript:;"
+            link: "#blog"
         },
         {
             text: "Privacy Policy",
-            link: "javascript:;"
+            link: "#privacy-policy"
         },
         {
             text: "Terms & Conditions",
-            link: "javascript:;"
+            link: "#terms-conditions"
         },
     ];
     return (
