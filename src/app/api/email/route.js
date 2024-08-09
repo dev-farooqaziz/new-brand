@@ -11,13 +11,13 @@ export async function POST(req, res) {
             port: 465,
             secure: true,
             auth: {
-                user: "dev.faz@productions-dev.com",
-                pass: "cl-faroq1"
+                user: "",
+                pass: ""
             }
         });
         const mailOptions = {
-            from: "dev.faz@productions-dev.com",
-            to: "dev.faz@productions-dev.com",
+            from: "",
+            to: "",
             subject: `New Brand Lead`,
             html: `<table>
                     <tr>
