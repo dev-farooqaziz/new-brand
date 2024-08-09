@@ -39,7 +39,7 @@ const Header = () => {
 
     return (
 
-        <header className={`w-full z-[999] rounded-none h-[80px] flex items-center ${isFixed ? 'fixed top-0 left-0 w-full bg-white shadow-md duration-1000 ease-in-out' : 'static duration-1000 ease-in-out shadow-md lg:shadow-none'}`}>
+        <header className={`w-full z-[999] rounded-none h-[80px] flex items-center bg-white ${isFixed ? 'fixed top-0 left-0 w-full bg-white shadow-md duration-1000 ease-in-out' : 'static duration-1000 ease-in-out shadow-md lg:shadow-none'}`}>
             <div className="container h-full flex items-center">
                 <nav className="w-full h-full flex items-center justify-between mx-auto bg-transparent">
                     <div className="w-full lg:w-auto h-full flex flex-wrap items-center justify-between">

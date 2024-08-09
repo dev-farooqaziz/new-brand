@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image"
+//======
 import arrowCta from "media/icons/arrowCta.png"
 
 const CTA = ({ text, href, bg }) => {

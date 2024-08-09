@@ -38,6 +38,7 @@ const CustomBi = dynamic(() => import('./custombi/CustomBi'))
 const UniqueModel = dynamic(() => import('./uniquemodel/UniqueModel'))
 const Process = dynamic(() => import('./process/Process'))
 const FullStack = dynamic(() => import('./fullstack/FullStack'))
+const Thanks = dynamic(() => import('./thankyou/ThankYou'))
 
 export {
     AutoPlaySlider,
@@ -78,4 +79,5 @@ export {
     UniqueModel,
     Process,
     FullStack,
+    Thanks,
 }
