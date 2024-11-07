@@ -39,9 +39,9 @@ const Feedback = ({ content }) => {
                             </div>
                         </div>
                         <div className="col-span-12 md:col-span-6 lg:col-span-8">
-                            <AutoPlaySlider arrowPosition="absolute bottom-[-5%] md:bottom-[-10%] right-[1%]">
+                            <AutoPlaySlider options={{ align: "start" }} arrowPosition="absolute bottom-[-5%] md:bottom-[-10%] right-[1%]">
                                 {testimonials.map((item, index) => (
-                                    <div key={index} className="grow-0 shrink-0 basis-[100%] lg:basis-[50%] pl-4">
+                                    <div key={index} className="grow-0 shrink-0 basis-[100%] lg:basis-[50%] pl-5">
                                         <div className="bg-[#EEEEEE] py-8 lg:py-4 xl:py-12 rounded-[25px] h-full">
                                             <div className="flex items-center gap-5 px-10">
                                                 <Image src={item.clientImage} alt="Brand" className="w-[15%]" />

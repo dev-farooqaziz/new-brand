@@ -12,7 +12,7 @@ const Cryptocurrency = ({ content }) => {
                 <div className="container relative">
                     <AutoPlaySlider arrowPosition="absolute bottom-[-10%] left-[5%] md:left-[3%] lg:left-[1%]">
                         {cryptoCurrency.map((item, index) => (
-                            <div key={index} className="grow-0 shrink-0 basis-[100%] pl-4">
+                            <div key={index} className="grow-0 shrink-0 basis-[100%] pl-5">
                                 <div className="grid grid-cols-12 items-center gap-y-5 lg:gap-10">
                                     <div className="col-span-12 lg:col-span-4">
                                         <Image src={item.img} alt="Brand" className="w-auto md:w-[50%] lg:w-auto" />
