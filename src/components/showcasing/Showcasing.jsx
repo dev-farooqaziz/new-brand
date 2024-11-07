@@ -79,7 +79,7 @@ const Showcasing = () => {
                                     <div className="flex flex-col items-center group-hover:items-start justify-center group-hover:justify-between h-full px-5 group-hover:pt-10 relative">
                                         <div className="hidden group-hover:block absolute right-[-4%] lg:right-[-6%] top-[5%]">
                                             <a href="tel:0123456789">
-                                                <Image src={ArrowBlk} alt="Brand" className="w-[50%]" />
+                                                <Image src={ArrowBlk} alt="Brand" className="w-[50%] hover:rotate-[45deg] transition-all duration-300" />
                                             </a>
                                         </div>
                                         <div className="flex flex-col items-center group-hover:items-start justify-center">

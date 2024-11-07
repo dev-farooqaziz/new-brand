@@ -37,7 +37,7 @@ const Work = ({ content }) => {
                                             <h3 className="text-[16px] lg:text-[24px] tracking-wide font-bold font-sans text-white text-center leading-tight">{item.title}</h3>
                                             <p className="text-[12px] xl:text-[16px] tracking-wide font-sans text-white text-center leading-snug">{item.description}</p>
                                             <a href="tel:123456789">
-                                                <Image src={arrow} alt="Brand" className="w-[15%] mx-auto" />
+                                                <Image src={arrow} alt="Brand" className="w-[15%] mx-auto hover:rotate-[45deg] transition-all duration-300" />
                                             </a>
                                         </div>
                                     </div>

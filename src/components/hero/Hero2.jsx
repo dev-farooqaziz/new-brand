@@ -26,7 +26,7 @@ const Hero2 = ({ content }) => {
                             </div>
                             <div className="absolute right-[-5%] md:right-[-2%] lg:right-[-3%] bottom-[4%] lg:bottom-[3%]">
                                 <a href="tel:123456789">
-                                    <Image src={ArrowBlk} alt="Brand" className="w-[50%] md:w-[60%] bg-white/50 lg:bg-white/20 p-2 rounded-full" />
+                                    <Image src={ArrowBlk} alt="Brand" className="w-[50%] md:w-[60%] bg-white/50 lg:bg-white/20 p-2 rounded-full hover:rotate-[45deg] transition-all duration-300" />
                                 </a>
                             </div>
                         </div>

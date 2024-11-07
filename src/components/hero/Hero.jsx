@@ -25,7 +25,7 @@ const Hero = ({ content }) => {
                             </div>
                             <div className="absolute right-[-5%] md:right-[-2%] lg:right-[-3%] bottom-[4%] lg:bottom-[3%]">
                                 <a href="tel:123456789">
-                                    <Image src={ArrowBlk} alt="Brand" className="w-[50%] md:w-[60%] bg-white/50 lg:bg-white/20 p-2 rounded-full" />
+                                    <Image src={ArrowBlk} alt="Brand" className="w-[50%] md:w-[60%] bg-white/50 lg:bg-white/20 p-2 rounded-full hover:rotate-[45deg] transition-all duration-300" />
                                 </a>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ const Hero = ({ content }) => {
                                         <div className="absolute bottom-[8%] left-[5%] lg:left-[8%] w-[95%] lg:w-full flex items-center justify-between">
                                             <h5 className="text-[20px] md:text-[16px] xl:text-[20px] tracking-wide font-semibold font-sans text-white leading-tight md:w-full">{title4}</h5>
                                             <a href="tel:123456789">
-                                                <Image src={ArrowOrg} alt="Brand" className="w-[60%] lg:w-[50%]" />
+                                                <Image src={ArrowOrg} alt="Brand" className="w-[60%] lg:w-[50%] hover:rotate-[45deg] transition-all duration-300" />
                                             </a>
                                         </div>
                                     </div>
@@ -69,7 +69,7 @@ const Hero = ({ content }) => {
                                         <div className="absolute bottom-[8%] left-[5%] lg:left-[8%] w-[95%] lg:w-full flex items-center justify-between">
                                             <h5 className="text-[20px] md:text-[16px] xl:text-[20px] tracking-wide font-semibold font-sans text-white leading-tight md:w-full">{title5}</h5>
                                             <a href="tel:123456789">
-                                                <Image src={ArrowOrg} alt="Brand" className="w-[60%] lg:w-[50%]" />
+                                                <Image src={ArrowOrg} alt="Brand" className="w-[60%] lg:w-[50%] hover:rotate-[45deg] transition-all duration-300" />
                                             </a>
                                         </div>
                                     </div>

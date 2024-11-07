@@ -31,7 +31,7 @@ const Solution = ({ content }) => {
                                     <div className="relative">
                                         <Image src={item.image} alt="Brand" className="z-10" />
                                         <a href="tel:123456789" className="absolute right-[0%] lg:right-[-2%] xl:right-[-5%] bottom-[4%]">
-                                            <Image src={arrow} alt="Arrow" className="w-[60%] lg:w-[45%] mx-auto" />
+                                            <Image src={arrow} alt="Arrow" className="w-[60%] lg:w-[45%] mx-auto hover:rotate-[45deg] transition-all duration-300" />
                                         </a>
                                     </div>
                                     <div className="flex flex-col gap-2 xl:gap-4 bg-[#EEEEEE] px-6 xl:px-10 pt-12 xl:pt-14 pb-6 xl:pb-8 rounded-t-none rounded-[30px] mt-[-18%] lg:mt-[-22%] xl:mt-[-18%] 2xl:mt-[-15%]">
