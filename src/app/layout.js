@@ -3,9 +3,9 @@ import { primary } from "./configs/fonts";
 import { Poppins } from "next/font/google";
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap',
-  variable: '--font-secondary'
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+  variable: "--font-secondary",
 });
 //===== Import Components =====
 import Header from "@/components/header/Header";
@@ -14,7 +14,7 @@ import Footer from "@/components/footer/Footer";
 import "./globals.css";
 //===== Meta Data =====
 export const metadata = {
-  metadataBase: new URL('https://www.bitswits.co/'),
+  metadataBase: new URL("https://www.bitswits.co/"),
   //===== Meta Tags =====
   title: "Top Mobile App Developmen Company - Brand",
   description: "Top Mobile App Developmen Company",
@@ -22,22 +22,35 @@ export const metadata = {
   openGraph: {
     title: "Top Mobile App Developmen Company - Brand",
     description: "Top Mobile App Developmen Company",
-    url: '/',
-    siteName: '',
-    locale: 'en_US',
-    type: 'website',
+    url: "/",
+    siteName: "",
+    locale: "en_US",
+    type: "website",
   },
   //===== Canonical =====
-  alternates: { canonical: '/' },
+  alternates: { canonical: "/" },
+  //===== No-Index =====
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: false,
+      "max-snippet": -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+    },
+  },
   //===== GEO Tags =====
   other: {},
   //===== Google Varification =====
   verification: {
     other: {
-      "": [''],
+      "": [""],
     },
   },
-}
+};
 
 export default function RootLayout({ children }) {
   return (

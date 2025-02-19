@@ -30,7 +30,7 @@ const Solution = ({ content }) => {
                                 <div className="flex flex-col gap-10">
                                     <div className="relative">
                                         <Image src={item.image} alt="Brand" className="z-10" />
-                                        <a href="tel:123456789" className="absolute right-[0%] lg:right-[-2%] xl:right-[-5%] bottom-[4%]">
+                                        <a href="tel:0123456789" className="absolute right-[0%] lg:right-[-2%] xl:right-[-5%] bottom-[4%]">
                                             <Image src={arrow} alt="Arrow" className="w-[60%] lg:w-[45%] mx-auto hover:rotate-[45deg] transition-all duration-300" />
                                         </a>
                                     </div>

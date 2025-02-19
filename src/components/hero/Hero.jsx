@@ -24,7 +24,7 @@ const Hero = ({ content }) => {
                                 <p className="text-[15px] tracking-wide font-poppins text-white ps-6 lg:ps-8 xl:ps-12 pe-6 md:pe-[40px] xl:pe-[60px]">{para}</p>
                             </div>
                             <div className="absolute right-[-5%] md:right-[-2%] lg:right-[-3%] bottom-[4%] lg:bottom-[3%]">
-                                <a href="tel:123456789">
+                                <a href="tel:0123456789">
                                     <Image src={ArrowBlk} alt="Brand" className="w-[50%] md:w-[60%] bg-white/50 lg:bg-white/20 p-2 rounded-full hover:rotate-[45deg] transition-all duration-300" />
                                 </a>
                             </div>
@@ -59,7 +59,7 @@ const Hero = ({ content }) => {
                                         <Image src={BanImg2} alt="Brand" fill={true} className="-z-10 object-cover object-center" />
                                         <div className="absolute bottom-[8%] left-[5%] lg:left-[8%] w-[95%] lg:w-full flex items-center justify-between">
                                             <h5 className="text-[20px] md:text-[16px] xl:text-[20px] tracking-wide font-semibold font-sans text-white leading-tight md:w-full">{title4}</h5>
-                                            <a href="tel:123456789">
+                                            <a href="tel:0123456789">
                                                 <Image src={ArrowOrg} alt="Brand" className="w-[60%] lg:w-[50%] hover:rotate-[45deg] transition-all duration-300" />
                                             </a>
                                         </div>
@@ -68,7 +68,7 @@ const Hero = ({ content }) => {
                                         <Image src={BanImg3} alt="Brand" fill={true} className="-z-10 object-cover object-center" />
                                         <div className="absolute bottom-[8%] left-[5%] lg:left-[8%] w-[95%] lg:w-full flex items-center justify-between">
                                             <h5 className="text-[20px] md:text-[16px] xl:text-[20px] tracking-wide font-semibold font-sans text-white leading-tight md:w-full">{title5}</h5>
-                                            <a href="tel:123456789">
+                                            <a href="tel:0123456789">
                                                 <Image src={ArrowOrg} alt="Brand" className="w-[60%] lg:w-[50%] hover:rotate-[45deg] transition-all duration-300" />
                                             </a>
                                         </div>

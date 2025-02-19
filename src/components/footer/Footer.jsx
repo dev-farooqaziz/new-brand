@@ -155,7 +155,7 @@ const Footer = () => {
                         <div className="col-span-12 xl:col-span-6">
                             <div className="grid grid-cols-12 gap-y-8 xl:gap-14">
                                 <div className="col-span-12 md:col-span-6">
-                                    <Link href="/" className='text-[30px] text-white font-sans tracking-wide font-bold'>Brand Name</Link>
+                                    <Link href="/" className='text-[30px] text-white font-sans tracking-wide font-bold'>Web & Apps</Link>
                                     <p className='text-[16px] text-white font-sans tracking-wide mt-4 pe-10 xl:pe-0'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
                                     <ul className="flex items-center gap-2 md:gap-0 mt-4 md:mt-6">
                                         {
@@ -229,21 +229,21 @@ const Footer = () => {
                             </div>
                             <div className="grid grid-cols-12 mt-16 gap-3">
                                 <div className="col-span-12 md:col-span-4">
-                                    <a href='mailto:info@brand.com' className="bg-transparent text-white border-2 border-white w-[60%] md:w-[80%] xl:w-max h-[60px] rounded-[15px] flex justify-center items-center gap-2">
+                                    <a href='mailto:info@xyz.com' className="bg-transparent text-white border-2 border-white w-[60%] md:w-[80%] xl:w-max h-[60px] rounded-[15px] flex justify-center items-center gap-2">
                                         <Image src={email} alt="Brand" className="w-[10%] md:w-[12%]" />
                                         <span className="text-[20px] md:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide">CONTACT EMAIL</span>
                                     </a>
                                 </div>
                                 <div className="col-span-12 md:col-span-4">
-                                    <a href='tel:123456789' className="bg-transparent text-white border-2 border-white w-[60%] md:w-[80%] xl:w-max h-[60px] rounded-[15px] flex justify-center items-center gap-2">
+                                    <a href='tel:0123456789' className="bg-transparent text-white border-2 border-white w-[60%] md:w-[80%] xl:w-max h-[60px] rounded-[15px] flex justify-center items-center gap-2">
                                         <Image src={phone} alt="Brand" className="w-[10%] md:w-[12%]" />
-                                        <span className="text-[20px] md:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide">+1 312 379 5987</span>
+                                        <span className="text-[20px] md:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide">+1 012 345 6789</span>
                                     </a>
                                 </div>
                                 <div className="col-span-12 md:col-span-4">
-                                    <a href='tel:123456789' className="bg-transparent text-white border-2 border-white w-[60%] md:w-[80%] xl:w-max h-[60px] rounded-[15px] flex justify-center items-center gap-2">
+                                    <a href='tel:0123456789' className="bg-transparent text-white border-2 border-white w-[60%] md:w-[80%] xl:w-max h-[60px] rounded-[15px] flex justify-center items-center gap-2">
                                         <Image src={phone} alt="Brand" className="w-[10%] md:w-[12%]" />
-                                        <span className="text-[20px] md:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide">+1 833 500 6007</span>
+                                        <span className="text-[20px] md:text-[16px] 2xl:text-[18px] font-normal font-sans tracking-wide">+1 012 345 6789</span>
                                     </a>
                                 </div>
                             </div>
